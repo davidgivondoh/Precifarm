@@ -84,28 +84,24 @@ export default function Home() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <FeatureCard
             href="/solar-pumps"
-            icon="&#9788;"
             title="Solar Water Pumping"
-            description="Pump water from boreholes, rivers, or dams using free solar energy. No fuel costs, no grid connection needed. Systems start from KES 145,000."
+            description="Pump water from boreholes, rivers, or dams using free solar energy. No fuel costs, no grid connection needed. Systems from KES 145,000."
             image="/images/solar-pump-product.jpg"
           />
           <FeatureCard
             href="/drip-irrigation"
-            icon="&#128167;"
             title="Drip Irrigation"
-            description="Deliver water directly to your crop roots and save up to 60% on water. From quarter-acre kitchen gardens to 10+ acre commercial farms."
+            description="Deliver water directly to crop roots and save up to 60% on water. From quarter-acre kitchen gardens to 10+ acre commercial farms."
             image="/images/valve-connector.jpg"
           />
           <FeatureCard
             href="/farm-design"
-            icon="&#128208;"
             title="Farm Design & Engineering"
-            description="We survey your land, design the hydraulics, and manage the entire project. You get a farm engineered for maximum yield and minimum waste."
+            description="We survey your land, design the hydraulics, and manage the entire project. A farm engineered for maximum yield and minimum waste."
             image="/images/water-tanks.jpg"
           />
           <FeatureCard
             href="/solar-energy"
-            icon="&#9889;"
             title="Nishati Solar Energy"
             description="Power your home, packhouse, or cold storage with reliable solar. EPRA-compliant systems with remote monitoring included."
             image="/images/solar-panel-installation.jpg"

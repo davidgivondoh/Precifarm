@@ -246,13 +246,12 @@ export function StatCard({ value, label }: { value: string; label: string }) {
 /* ── Feature card (services) ── */
 export function FeatureCard({
   href,
-  icon,
   title,
   description,
   image,
 }: {
   href: string;
-  icon: string;
+  icon?: string;
   title: string;
   description: string;
   image?: string;
@@ -263,7 +262,7 @@ export function FeatureCard({
       className="group bg-white border border-warm-200 rounded-2xl shadow-sm card-lift block overflow-hidden"
     >
       {image && (
-        <div className="relative h-44 overflow-hidden">
+        <div className="relative h-48 overflow-hidden">
           <img
             src={image}
             alt=""
@@ -271,14 +270,17 @@ export function FeatureCard({
           />
         </div>
       )}
-      <div className={image ? "p-6" : "p-8"}>
-        <div className="w-12 h-12 bg-warm-50 border border-warm-200 rounded-xl flex items-center justify-center text-xl mb-4 group-hover:bg-warm-100 transition-colors">
-          {icon}
-        </div>
+      <div className="p-6">
         <h3 className="text-lg font-bold text-navy-900 mb-2 group-hover:text-navy-700 transition-colors">
           {title}
         </h3>
-        <p className="text-gray-500 text-sm leading-relaxed">{description}</p>
+        <p className="text-gray-500 text-sm leading-relaxed mb-4">{description}</p>
+        <span className="inline-flex items-center text-sm font-semibold text-navy-900 group-hover:text-navy-700">
+          Learn more
+          <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </span>
       </div>
     </Link>
   );
