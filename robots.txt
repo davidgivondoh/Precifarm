@@ -1,0 +1,7 @@
+User-Agent: *
+Allow: /
+Disallow: /_next/
+Disallow: /api/
+Disallow: /quotes
+
+Sitemap: https://precifarm.com/sitemap.xml
