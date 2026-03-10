@@ -1,7 +1,7 @@
-:HL["/_next/static/chunks/84378305a69d436c.css","style"]
+:HL["/_next/static/chunks/ff282627c17087c6.css","style"]
 :HL["/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/images/solar-panel-installation.jpg","image"]
 :HL["/images/energy-job.png","image"]
 :HL["/images/solarpanels.jpg","image"]
 :HL["/images/jinko-home-backup.png","image"]
-0:{"buildId":"hQmMkiwUGPtwoRvG0bxPL","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"solar-energy","paramType":null,"paramKey":"solar-energy","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"TOnbzQBwUjoOTDCpiKrkQ","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"solar-energy","paramType":null,"paramKey":"solar-energy","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}

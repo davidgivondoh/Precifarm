@@ -1,11 +1,11 @@
-:HL["/_next/static/chunks/84378305a69d436c.css","style"]
+:HL["/_next/static/chunks/ff282627c17087c6.css","style"]
 :HL["/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/images/sp500.jpg","image"]
 :HL["/images/solar-pumps-hero.png","image"]
 :HL["/images/drip-kit-onions.jpg","image"]
 :HL["/images/drip-kit-installation.jpg","image"]
-:HL["/images/nishati-solar.jpg","image"]
 :HL["/images/farmer1.jfif","image"]
 :HL["/images/farmer2.jfif","image"]
 :HL["/images/farmer3.jpeg","image"]
-0:{"buildId":"hQmMkiwUGPtwoRvG0bxPL","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+:HL["/images/nishati-solar.jpg","image"]
+0:{"buildId":"TOnbzQBwUjoOTDCpiKrkQ","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
