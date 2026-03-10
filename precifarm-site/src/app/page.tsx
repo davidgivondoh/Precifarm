@@ -19,8 +19,8 @@ export default function Home() {
       <section className="relative min-h-[90vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1200&q=80"
-            alt="Irrigated farmland in semi-arid landscape with rows of crops"
+            src="/images/solar-pump-field.jpg"
+            alt="Solar-powered water pump system in a lush green agricultural field"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a]/90 via-[#0f172a]/75 to-[#0f172a]/40" />
@@ -87,39 +87,43 @@ export default function Home() {
             icon="&#9788;"
             title="Solar Water Pumping"
             description="Pump water from boreholes, rivers, or dams using free solar energy. No fuel costs, no grid connection needed. Systems start from KES 145,000."
+            image="/images/solar-pump-product.jpg"
           />
           <FeatureCard
             href="/drip-irrigation"
             icon="&#128167;"
             title="Drip Irrigation"
             description="Deliver water directly to your crop roots and save up to 60% on water. From quarter-acre kitchen gardens to 10+ acre commercial farms."
+            image="/images/valve-connector.jpg"
           />
           <FeatureCard
             href="/farm-design"
             icon="&#128208;"
             title="Farm Design & Engineering"
             description="We survey your land, design the hydraulics, and manage the entire project. You get a farm engineered for maximum yield and minimum waste."
+            image="/images/water-tanks.jpg"
           />
           <FeatureCard
             href="/solar-energy"
             icon="&#9889;"
             title="Nishati Solar Energy"
             description="Power your home, packhouse, or cold storage with reliable solar. EPRA-compliant systems with remote monitoring included."
+            image="/images/solar-panel-installation.jpg"
           />
         </div>
       </Section>
 
-      {/* Visual break — irrigation image */}
+      {/* Visual break — water infrastructure */}
       <section className="relative h-[400px] overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=1200&q=80"
-          alt="Drip irrigation system installed on smallholder farm with rows of vegetables"
+          src="/images/water-tanks.jpg"
+          alt="Elevated water storage tanks with HDPE pipe connections and filtration system"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a]/70 to-transparent flex items-end">
           <div className="max-w-7xl mx-auto px-6 pb-12 w-full">
             <p className="text-white text-2xl md:text-3xl font-bold max-w-2xl">
-              Drip irrigation saves up to 60% more water than flood irrigation — and your crops grow faster.
+              From water source to crop root — we engineer every connection for reliability and efficiency.
             </p>
           </div>
         </div>
@@ -218,37 +222,42 @@ export default function Home() {
           subtitle="Each brand delivers specialized expertise so your farm gets exactly what it needs — nothing more, nothing less."
         />
         <div className="grid lg:grid-cols-3 gap-6 mb-12">
-          <div className="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-md transition-all">
-            <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center text-xl mb-4">&#127793;</div>
-            <h3 className="text-lg font-bold mb-1 text-navy-900">Precifarm</h3>
-            <p className="text-sm text-gray-400 mb-3">Agri-Engineering</p>
-            <p className="text-sm text-gray-500 leading-relaxed">
-              The heart of what we do. Solar water pumping, precision drip irrigation, and complete farm design — engineered for Kenyan conditions and Kenyan crops.
-            </p>
+          <div className="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-md transition-all">
+            <div className="h-40 overflow-hidden">
+              <img src="/images/solar-pump-field.jpg" alt="" className="w-full h-full object-cover" />
+            </div>
+            <div className="p-8">
+              <h3 className="text-lg font-bold mb-1 text-navy-900">Precifarm</h3>
+              <p className="text-sm text-gray-400 mb-3">Agri-Engineering</p>
+              <p className="text-sm text-gray-500 leading-relaxed">
+                The heart of what we do. Solar water pumping, precision drip irrigation, and complete farm design — engineered for Kenyan conditions and Kenyan crops.
+              </p>
+            </div>
           </div>
-          <div className="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-md transition-all">
-            <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center text-xl mb-4">&#9788;</div>
-            <h3 className="text-lg font-bold mb-1 text-navy-900">Nishati by Precifarm</h3>
-            <p className="text-sm text-gray-400 mb-3">Solar Energy</p>
-            <p className="text-sm text-gray-500 leading-relaxed">
-              Reliable solar power for your home, business, or farm operations. Cash-purchase systems with no hidden fees and full remote monitoring.
-            </p>
+          <div className="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-md transition-all">
+            <div className="h-40 overflow-hidden">
+              <img src="/images/solar-panel-installation.jpg" alt="" className="w-full h-full object-cover" />
+            </div>
+            <div className="p-8">
+              <h3 className="text-lg font-bold mb-1 text-navy-900">Nishati by Precifarm</h3>
+              <p className="text-sm text-gray-400 mb-3">Solar Energy</p>
+              <p className="text-sm text-gray-500 leading-relaxed">
+                Reliable solar power for your home, business, or farm operations. Cash-purchase systems with no hidden fees and full remote monitoring.
+              </p>
+            </div>
           </div>
-          <div className="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-md transition-all">
-            <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center text-xl mb-4">&#128225;</div>
-            <h3 className="text-lg font-bold mb-1 text-navy-900">PreciSense&trade;</h3>
-            <p className="text-sm text-gray-400 mb-3">Smart Monitoring</p>
-            <p className="text-sm text-gray-500 leading-relaxed">
-              Know exactly how your system is performing. Real-time data, SMS alerts when something needs attention, and performance history on your phone.
-            </p>
+          <div className="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-md transition-all">
+            <div className="h-40 overflow-hidden">
+              <img src="/images/drip-field-redsoil.jpg" alt="" className="w-full h-full object-cover" />
+            </div>
+            <div className="p-8">
+              <h3 className="text-lg font-bold mb-1 text-navy-900">PreciSense&trade;</h3>
+              <p className="text-sm text-gray-400 mb-3">Smart Monitoring</p>
+              <p className="text-sm text-gray-500 leading-relaxed">
+                Know exactly how your system is performing. Real-time data, SMS alerts when something needs attention, and performance history on your phone.
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="rounded-2xl overflow-hidden h-[300px]">
-          <img
-            src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1200&q=80"
-            alt="Solar panels installed on agricultural land, generating clean energy for farm operations"
-            className="w-full h-full object-cover"
-          />
         </div>
       </Section>
 
@@ -383,8 +392,8 @@ export default function Home() {
               </div>
               <div className="mt-10">
                 <img
-                  src="https://images.unsplash.com/photo-1489392191049-fc10c97e64b6?w=1200&q=80"
-                  alt="Scenic Kenyan landscape with rolling green hills under a warm sky"
+                  src="/images/pipe-fittings.jpg"
+                  alt="Farmer planting seedlings on a well-managed agricultural plot"
                   className="rounded-2xl w-full h-48 object-cover"
                 />
               </div>

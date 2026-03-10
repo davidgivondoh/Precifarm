@@ -23,7 +23,7 @@ export default function SolarEnergyPage() {
         title="Own Your Power."
         titleAccent="Stop Renting It."
         subtitle="KPLC bills keep rising. Load-shedding keeps disrupting. Generators keep burning money. Nishati solar systems give you energy independence — you own the system outright from day one, and the sun does not send monthly invoices."
-        gradient="white"
+        backgroundImage="/images/solar-panel-installation.jpg"
         meta={[
           { icon: "&#128176;", text: "Cash Purchase — Own It Outright" },
           { icon: "&#128225;", text: "Remote Monitoring Included" },
@@ -36,8 +36,8 @@ export default function SolarEnergyPage() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <img
-              src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?w=800&q=80"
-              alt="Home with solar panels installed on roof"
+              src="/images/solar-pump-system.jpg"
+              alt="Solar panel system with submersible pump delivering water to storage"
               className="rounded-2xl w-full h-80 object-cover"
             />
           </div>
@@ -103,8 +103,8 @@ export default function SolarEnergyPage() {
           </div>
           <div>
             <img
-              src="https://images.unsplash.com/photo-1558449028-b53a39d100fc?w=800&q=80"
-              alt="Professional solar panel installation"
+              src="/images/solar-pump-product.jpg"
+              alt="Solar-powered submersible pump system with panel array and water trough"
               className="rounded-2xl w-full h-96 object-cover"
             />
           </div>

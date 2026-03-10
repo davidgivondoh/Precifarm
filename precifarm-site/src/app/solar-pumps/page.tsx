@@ -24,6 +24,7 @@ export default function SolarPumpsPage() {
         title="Stop Paying for Diesel."
         titleAccent="Start Pumping Free Water."
         subtitle="Kenyan farmers lose millions every year to fuel costs and unreliable grid power. Our turnkey solar pump systems deliver water every single day — no fuel bills, no generator noise, no KPLC dependency. Just sunlight and water."
+        backgroundImage="/images/solar-pump-product.jpg"
         meta={[
           { icon: "&#128176;", text: "From KES 145,000" },
           { icon: "&#9878;", text: "99.2% Uptime Guarantee" },
@@ -36,8 +37,8 @@ export default function SolarPumpsPage() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <img
-              src="https://images.unsplash.com/photo-1611365892117-00ac6c5a8db4?w=800&q=80"
-              alt="Solar-powered water pump system installed in a semi-arid farming area"
+              src="/images/water-tanks.jpg"
+              alt="Elevated water storage tanks with blue HDPE pipe connections and valves"
               className="rounded-2xl w-full h-80 object-cover"
             />
           </div>
@@ -103,8 +104,8 @@ export default function SolarPumpsPage() {
           </div>
           <div>
             <img
-              src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=800&q=80"
-              alt="Solar panel array powering agricultural pump"
+              src="/images/solar-panel-installation.jpg"
+              alt="Solar panel array installed on galvanized steel mounting for agricultural pump system"
               className="rounded-2xl w-full h-96 object-cover"
             />
           </div>

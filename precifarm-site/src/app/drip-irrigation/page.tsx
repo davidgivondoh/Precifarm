@@ -23,6 +23,7 @@ export default function DripIrrigationPage() {
         title="Every Drop Counts."
         titleAccent="Every Harvest Proves It."
         subtitle="Water is your most valuable input. Drip irrigation delivers it directly to the root zone — no waste, no runoff, no guesswork. Kenyan farmers using our systems report 20-50% higher yields while using 60% less water."
+        backgroundImage="/images/valve-connector.jpg"
         meta={[
           { icon: "&#128176;", text: "From KES 45,000" },
           { icon: "&#128167;", text: "Save 60% Water" },
@@ -35,8 +36,8 @@ export default function DripIrrigationPage() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <img
-              src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=800&q=80"
-              alt="Drip irrigation kit with drip lines installed on rows of vegetables"
+              src="/images/drip-field-redsoil.jpg"
+              alt="Drip irrigation lines installed on rows of red Kenyan soil farmland"
               className="rounded-2xl w-full h-80 object-cover"
             />
           </div>
@@ -102,8 +103,8 @@ export default function DripIrrigationPage() {
           </div>
           <div>
             <img
-              src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&q=80"
-              alt="Healthy green crops growing under drip irrigation"
+              src="/images/crops-drip.jpg"
+              alt="Lush green onions growing with drip irrigation tape on rich soil"
               className="rounded-2xl w-full h-80 object-cover"
             />
           </div>

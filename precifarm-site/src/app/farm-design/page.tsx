@@ -24,6 +24,7 @@ export default function FarmDesignPage() {
         title="Your Farm,"
         titleAccent="Engineered for Profit."
         subtitle="Great farms are not accidents — they are engineered. We bring together water sourcing, pumping, storage, distribution, irrigation, energy, and automation into a single integrated design that maximizes your return on every hectare."
+        backgroundImage="/images/water-tanks.jpg"
         meta={[
           { icon: "&#128207;", text: "5 - 500+ Hectares" },
           { icon: "&#128176;", text: "From KES 150,000" },
@@ -48,8 +49,8 @@ export default function FarmDesignPage() {
           </div>
           <div>
             <img
-              src="https://images.unsplash.com/photo-1586771107445-b3e19d0e1a44?w=800&q=80"
-              alt="Engineering blueprint and design planning"
+              src="/images/pipe-fittings.jpg"
+              alt="Close-up of drip irrigation pipe fittings and compression connectors on farm soil"
               className="rounded-2xl w-full h-96 object-cover"
             />
           </div>
@@ -67,8 +68,8 @@ export default function FarmDesignPage() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <img
-              src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=800&q=80"
-              alt="Aerial view of a well-designed farm landscape"
+              src="/images/solar-pump-components.jpg"
+              alt="Collection of submersible pumps and solar panels for agricultural water systems"
               className="rounded-2xl w-full h-72 object-cover"
             />
           </div>

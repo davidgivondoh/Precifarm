@@ -83,12 +83,10 @@ export function PageHero({
       }`}
     >
       {hasImage && (
-        <Image
+        <img
           src={backgroundImage}
           alt=""
-          fill
-          className="object-cover"
-          priority
+          className="absolute inset-0 w-full h-full object-cover"
         />
       )}
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -251,24 +249,37 @@ export function FeatureCard({
   icon,
   title,
   description,
+  image,
 }: {
   href: string;
   icon: string;
   title: string;
   description: string;
+  image?: string;
 }) {
   return (
     <Link
       href={href}
-      className="group bg-white border border-warm-200 rounded-2xl p-8 shadow-sm card-lift block"
+      className="group bg-white border border-warm-200 rounded-2xl shadow-sm card-lift block overflow-hidden"
     >
-      <div className="w-14 h-14 bg-warm-50 border border-warm-200 rounded-xl flex items-center justify-center text-2xl mb-5 group-hover:bg-warm-100 transition-colors">
-        {icon}
+      {image && (
+        <div className="relative h-44 overflow-hidden">
+          <img
+            src={image}
+            alt=""
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+      )}
+      <div className={image ? "p-6" : "p-8"}>
+        <div className="w-12 h-12 bg-warm-50 border border-warm-200 rounded-xl flex items-center justify-center text-xl mb-4 group-hover:bg-warm-100 transition-colors">
+          {icon}
+        </div>
+        <h3 className="text-lg font-bold text-navy-900 mb-2 group-hover:text-navy-700 transition-colors">
+          {title}
+        </h3>
+        <p className="text-gray-500 text-sm leading-relaxed">{description}</p>
       </div>
-      <h3 className="text-lg font-bold text-navy-900 mb-2 group-hover:text-navy-700 transition-colors">
-        {title}
-      </h3>
-      <p className="text-gray-500 text-sm leading-relaxed">{description}</p>
     </Link>
   );
 }
