@@ -262,18 +262,18 @@ export default function FarmDesignPage() {
         </div>
 
         {/* Tier 3 */}
-        <div className="bg-navy-900 rounded-2xl p-8 md:p-10">
+        <div className="bg-white border border-gray-200 rounded-2xl p-8 md:p-10">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
             <div className="flex items-center gap-3">
-              <h3 className="text-xl font-bold text-white">Tier 3 — Turnkey Farm Development</h3>
-              <span className="bg-white/20 text-white px-3 py-1 rounded-full text-xs font-bold">100+ Ha</span>
+              <h3 className="text-xl font-bold text-navy-900">Tier 3 — Turnkey Farm Development</h3>
+              <span className="bg-navy-900 text-white px-3 py-1 rounded-full text-xs font-bold">100+ Ha</span>
             </div>
           </div>
-          <p className="text-gray-300 text-sm mb-8">From raw land to first harvest. Complete farm development for investors, institutions, and government projects.</p>
+          <p className="text-gray-500 text-sm mb-8">From raw land to first harvest. Complete farm development for investors, institutions, and government projects.</p>
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div>
-              <h4 className="font-bold text-sm text-white mb-3">Full Scope</h4>
-              <div className="space-y-2 text-sm text-gray-300">
+              <h4 className="font-bold text-sm text-navy-900 mb-3">Full Scope</h4>
+              <div className="space-y-2 text-sm text-gray-500">
                 <p>Market analysis and feasibility study</p>
                 <p>Water availability and rights assessment</p>
                 <p>ROI modeling and financial projections</p>
@@ -283,8 +283,8 @@ export default function FarmDesignPage() {
               </div>
             </div>
             <div>
-              <h4 className="font-bold text-sm text-white mb-3">Delivery</h4>
-              <div className="space-y-2 text-sm text-gray-300">
+              <h4 className="font-bold text-sm text-navy-900 mb-3">Delivery</h4>
+              <div className="space-y-2 text-sm text-gray-500">
                 <p>Construction supervision at every phase</p>
                 <p>System testing and handover certification</p>
                 <p>Operations team recruitment and training</p>
@@ -294,16 +294,14 @@ export default function FarmDesignPage() {
               </div>
             </div>
           </div>
-          <div className="bg-white/10 rounded-xl overflow-hidden">
-            <DataTable
-              headers={["Fee Structure", "Detail"]}
-              rows={[
-                ["Design fees", "3-5% of project value"],
-                ["Project management", "8-12% of project value"],
-                ["Typical project range", "KES 20M - 500M+"],
-              ]}
-            />
-          </div>
+          <DataTable
+            headers={["Fee Structure", "Detail"]}
+            rows={[
+              ["Design fees", "3-5% of project value"],
+              ["Project management", "8-12% of project value"],
+              ["Typical project range", "KES 20M - 500M+"],
+            ]}
+          />
           <p className="text-gray-400 text-xs mt-3">Timeline: 6-18 months depending on scale and complexity</p>
         </div>
       </Section>

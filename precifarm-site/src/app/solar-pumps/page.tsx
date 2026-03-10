@@ -124,10 +124,10 @@ export default function SolarPumpsPage() {
         <div className="grid md:grid-cols-2 gap-8">
           {/* Diesel Card */}
           <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
-            <div className="bg-red-50 px-8 py-5 border-b border-red-100">
+            <div className="bg-gray-50 px-8 py-5 border-b border-gray-200">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-xs font-bold text-red-400 uppercase tracking-widest mb-1">Old Way</p>
+                  <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Old Way</p>
                   <h3 className="text-xl font-bold text-gray-900">Diesel Pump</h3>
                 </div>
                 <span className="text-3xl">&#9981;&#65039;</span>
@@ -145,7 +145,7 @@ export default function SolarPumpsPage() {
               ].map((item, i) => (
                 <div key={i} className="flex items-center justify-between pb-4 border-b border-gray-100 last:border-0 last:pb-0">
                   <span className="text-sm text-gray-500">{item.label}</span>
-                  <span className="text-sm font-bold text-red-600">{item.value}</span>
+                  <span className="text-sm font-bold text-gray-700">{item.value}</span>
                 </div>
               ))}
             </div>
