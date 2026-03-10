@@ -4,8 +4,8 @@
 :HL["/images/solar-pumps-hero.png","image"]
 :HL["/images/drip-kit-onions.jpg","image"]
 :HL["/images/water-tanks.jpg","image"]
-:HL["/images/solar-pump-product.jpg","image"]
+:HL["/images/nishati-solar.jpg","image"]
 :HL["/images/solar-panel-installation.jpg","image"]
 :HL["/images/drip-field-redsoil.jpg","image"]
 :HL["/images/pipe-fittings.jpg","image"]
-0:{"buildId":"4SA8DZTkxXdjH4yruGY7I","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"nFyXscBYXwaYppRMGV8vx","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}

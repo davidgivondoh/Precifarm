@@ -104,7 +104,7 @@ export default function Home() {
             href="/solar-energy"
             title="Nishati Solar Energy"
             description="Power your home, packhouse, or cold storage with reliable solar. EPRA-compliant systems with remote monitoring included."
-            image="/images/solar-pump-product.jpg"
+            image="/images/nishati-solar.jpg"
           />
         </div>
       </Section>
