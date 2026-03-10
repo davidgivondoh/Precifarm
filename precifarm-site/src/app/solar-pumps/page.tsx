@@ -24,7 +24,6 @@ export default function SolarPumpsPage() {
         title="Stop Paying for Diesel."
         titleAccent="Start Pumping Free Water."
         subtitle="Kenyan farmers lose millions every year to fuel costs and unreliable grid power. Our turnkey solar pump systems deliver water every single day — no fuel bills, no generator noise, no KPLC dependency. Just sunlight and water."
-        backgroundImage="/images/solar-pump-product.jpg"
         meta={[
           { icon: "&#128176;", text: "From KES 145,000" },
           { icon: "&#9878;", text: "99.2% Uptime Guarantee" },

@@ -23,7 +23,6 @@ export default function DripIrrigationPage() {
         title="Every Drop Counts."
         titleAccent="Every Harvest Proves It."
         subtitle="Water is your most valuable input. Drip irrigation delivers it directly to the root zone — no waste, no runoff, no guesswork. Kenyan farmers using our systems report 20-50% higher yields while using 60% less water."
-        backgroundImage="/images/valve-connector.jpg"
         meta={[
           { icon: "&#128176;", text: "From KES 45,000" },
           { icon: "&#128167;", text: "Save 60% Water" },

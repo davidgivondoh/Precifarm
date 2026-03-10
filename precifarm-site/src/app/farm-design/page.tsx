@@ -24,7 +24,6 @@ export default function FarmDesignPage() {
         title="Your Farm,"
         titleAccent="Engineered for Profit."
         subtitle="Great farms are not accidents — they are engineered. We bring together water sourcing, pumping, storage, distribution, irrigation, energy, and automation into a single integrated design that maximizes your return on every hectare."
-        backgroundImage="/images/water-tanks.jpg"
         meta={[
           { icon: "&#128207;", text: "5 - 500+ Hectares" },
           { icon: "&#128176;", text: "From KES 150,000" },

@@ -23,7 +23,6 @@ export default function SolarEnergyPage() {
         title="Own Your Power."
         titleAccent="Stop Renting It."
         subtitle="KPLC bills keep rising. Load-shedding keeps disrupting. Generators keep burning money. Nishati solar systems give you energy independence — you own the system outright from day one, and the sun does not send monthly invoices."
-        backgroundImage="/images/solar-panel-installation.jpg"
         meta={[
           { icon: "&#128176;", text: "Cash Purchase — Own It Outright" },
           { icon: "&#128225;", text: "Remote Monitoring Included" },

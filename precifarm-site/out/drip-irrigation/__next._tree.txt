@@ -1,6 +1,5 @@
-:HL["/_next/static/chunks/4254ffd6f7942ef9.css","style"]
+:HL["/_next/static/chunks/b6463f97ba43cb04.css","style"]
 :HL["/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/images/valve-connector.jpg","image"]
 :HL["/images/drip-field-redsoil.jpg","image"]
 :HL["/images/crops-drip.jpg","image"]
-0:{"buildId":"uW0macsUIklXWfD4CS0_O","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"drip-irrigation","paramType":null,"paramKey":"drip-irrigation","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"_jPST3K9VQNYAeZbKqCPB","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"drip-irrigation","paramType":null,"paramKey":"drip-irrigation","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
