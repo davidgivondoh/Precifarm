@@ -20,9 +20,9 @@ export default function SolarEnergyPage() {
     <>
       <PageHero
         badge="&#9889; Nishati by Precifarm"
-        title="Cash-Purchase Solar."
-        titleAccent="Monitored Uptime."
-        subtitle="Own your solar energy system outright from day one. No leasing, no finance — just clean, reliable power for your home, business, or farm. EPRA-compliant installation by certified engineers."
+        title="Own Your Power."
+        titleAccent="Stop Renting It."
+        subtitle="KPLC bills keep rising. Load-shedding keeps disrupting. Generators keep burning money. Nishati solar systems give you energy independence — you own the system outright from day one, and the sun does not send monthly invoices."
         gradient="white"
         meta={[
           { icon: "&#128176;", text: "Cash Purchase — Own It Outright" },
@@ -31,14 +31,36 @@ export default function SolarEnergyPage() {
         ]}
       />
 
-      {/* Value Props */}
+      {/* Image + Value Split */}
       <Section>
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?w=800&q=80"
+              alt="Home with solar panels installed on roof"
+              className="rounded-2xl w-full h-80 object-cover"
+            />
+          </div>
+          <div>
+            <h2 className="text-3xl font-bold text-navy-900 mb-4">Why Cash Purchase Makes Sense</h2>
+            <p className="text-gray-500 leading-relaxed mb-4">
+              Leasing and pay-as-you-go solar products keep you locked into monthly payments — often for systems you never fully own. With Nishati, you pay once and the power is yours for 25+ years.
+            </p>
+            <p className="text-gray-500 leading-relaxed">
+              Our systems use Tier-1 panels with 25-year performance warranties and are installed by EPRA-certified engineers. Every installation includes remote monitoring so you can track your solar production in real time.
+            </p>
+          </div>
+        </div>
+      </Section>
+
+      {/* Value Props */}
+      <Section className="border-t border-gray-100">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { title: "Cash Purchase", desc: "No leasing, no finance — own the system outright from day one." },
-            { title: "Monitored Uptime", desc: "Remote monitoring via PreciSense with SMS alerts and real-time dashboard." },
-            { title: "Certified Install", desc: "EPRA-compliant installation by certified solar engineers." },
-            { title: "10-Year Warranty", desc: "Tier-1 panels: 25-year performance warranty, 10-year product warranty." },
+            { title: "Cash Purchase", desc: "No leasing, no subscriptions, no hidden fees. You own the system from installation day." },
+            { title: "Monitored Uptime", desc: "PreciSense remote monitoring with SMS alerts and real-time dashboard — know your system is performing." },
+            { title: "Certified Install", desc: "EPRA-compliant installation by certified solar engineers. Fully permitted and inspection-ready." },
+            { title: "25-Year Panels", desc: "Tier-1 panels with 25-year performance warranty and 10-year product warranty. Built to outlast your roof." },
           ].map((v) => (
             <div key={v.title} className="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-md transition-all">
               <h3 className="text-lg font-bold mb-2">{v.title}</h3>
@@ -48,9 +70,50 @@ export default function SolarEnergyPage() {
         </div>
       </Section>
 
-      {/* Home Solar */}
+      {/* Installation Process */}
+      <Section>
+        <SectionHeader title="How It Works" subtitle="From first call to monitoring dashboard — typically completed in 3-7 days." />
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <Step number="01" title="Site Assessment" description="We visit your property, assess load requirements, inspect roof or ground mounting options, and measure solar exposure." />
+          <Step number="02" title="System Design" description="Custom system sizing based on your actual energy consumption. Detailed quotation with no hidden costs." />
+          <Step number="03" title="Installation" description="EPRA-certified team installs panels, inverter, batteries, and wiring. Typically 1-3 days for homes, 3-7 for commercial." />
+          <Step number="04" title="Monitoring" description="PreciSense remote monitoring activated. SMS alerts for any issues. Dashboard access from your phone." />
+        </div>
+      </Section>
+
+      {/* Solar Installation Image Split */}
       <Section className="border-t border-gray-100">
-        <SectionHeader title="Home Solar Packages" subtitle="Reliable household power — lights, TV, phone charging, and appliances." />
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 className="text-3xl font-bold text-navy-900 mb-4">The Economics of Going Solar in Kenya</h2>
+            <div className="space-y-4">
+              <div className="bg-white border border-gray-200 rounded-2xl p-6">
+                <h3 className="text-lg font-bold mb-1">Average KPLC Bill Savings</h3>
+                <p className="text-sm text-gray-500">Most home systems save KES 3,000 - 15,000 per month. Business systems save KES 20,000 - 200,000+ per month depending on size.</p>
+              </div>
+              <div className="bg-white border border-gray-200 rounded-2xl p-6">
+                <h3 className="text-lg font-bold mb-1">Payback Period</h3>
+                <p className="text-sm text-gray-500">Home systems: 18-36 months. Business systems: 12-24 months. After payback, your electricity is essentially free.</p>
+              </div>
+              <div className="bg-white border border-gray-200 rounded-2xl p-6">
+                <h3 className="text-lg font-bold mb-1">System Lifespan</h3>
+                <p className="text-sm text-gray-500">25+ years of production from Tier-1 panels. Batteries last 8-15 years depending on type. Inverters carry 5-10 year warranties.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1558449028-b53a39d100fc?w=800&q=80"
+              alt="Professional solar panel installation"
+              className="rounded-2xl w-full h-96 object-cover"
+            />
+          </div>
+        </div>
+      </Section>
+
+      {/* Home Solar */}
+      <Section>
+        <SectionHeader title="Home Solar Packages" subtitle="Reliable household power — lights, TV, phone charging, refrigerator, and full home electrification. End load-shedding at home." />
         <div className="grid sm:grid-cols-3 gap-6">
           <PricingCard name="Basic Home" description="300W / 200Ah" price="KES 35,000" priceUnit="- 55,000"
             features={["1-3 lights", "Phone charging", "Radio", "Remote monitoring", "EPRA-compliant installation"]} ctaText="Get a Quote" />
@@ -62,8 +125,8 @@ export default function SolarEnergyPage() {
       </Section>
 
       {/* Business Solar */}
-      <Section>
-        <SectionHeader title="Business Solar Packages" subtitle="Keep operations running through outages and reduce electricity bills." />
+      <Section className="border-t border-gray-100">
+        <SectionHeader title="Business Solar Packages" subtitle="Keep your business running through outages. Protect revenue, reduce electricity costs, and eliminate generator dependency." />
         <div className="grid sm:grid-cols-3 gap-6">
           <PricingCard name="SME Starter" description="1-2 kW / 400Ah" price="KES 120,000" priceUnit="- 200,000"
             features={["Computers and lighting", "Phone charging stations", "POS systems", "Remote monitoring"]} ctaText="Get a Quote" />
@@ -75,8 +138,8 @@ export default function SolarEnergyPage() {
       </Section>
 
       {/* Farm Solar */}
-      <Section className="border-t border-gray-100">
-        <SectionHeader title="Farm Solar Packages" subtitle="Cold storage, agro-processing, lighting, and integrated pump systems." />
+      <Section>
+        <SectionHeader title="Farm Solar Packages" subtitle="Power your cold storage, agro-processing, security lighting, and pump systems — all from the sun. Designed for rural and off-grid locations." />
         <div className="grid sm:grid-cols-3 gap-6">
           <PricingCard name="Farm Basic" description="2 kW / 400Ah" price="KES 180,000" priceUnit="- 280,000"
             features={["Lighting and security", "Small processing", "Remote monitoring"]} ctaText="Get a Quote" />
@@ -87,31 +150,20 @@ export default function SolarEnergyPage() {
         </div>
       </Section>
 
-      {/* Installation Process */}
-      <Section>
-        <SectionHeader title="Installation Process" subtitle="From assessment to monitoring — typically completed in 1-3 days." />
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          <Step number="01" title="Site Assessment" description="Visit, assess load requirements, inspect roof/ground mounting options." />
-          <Step number="02" title="System Design" description="Optimum system size and configuration with detailed quotation." />
-          <Step number="03" title="Installation" description="Certified team installs and commissions — typically 1-3 days." />
-          <Step number="04" title="Monitoring" description="Remote monitoring activated, SMS alerts and dashboard access." />
-        </div>
-      </Section>
-
       {/* Component Standards */}
       <Section className="bg-navy-900 text-white">
-        <SectionHeader title="Nishati Component Standards" subtitle="Premium components with industry-leading warranties and local serviceability." light />
+        <SectionHeader title="Nishati Component Standards" subtitle="We only install premium, proven components with local serviceability and genuine manufacturer warranties." light />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <DarkCard title="Solar Panels" description="Tier-1: Jinko, Canadian Solar, JA Solar, Longi. 25-year performance warranty." />
-          <DarkCard title="Batteries" description="Lithium (LiFePO4) or AGM — both locally serviceable." />
-          <DarkCard title="Inverters" description="Victron Energy, Growatt, Schneider Electric." />
-          <DarkCard title="Installation" description="Professional team, EPRA-compliant, fully permitted." />
-          <DarkCard title="Monitoring" description="Real-time dashboard included with every system." />
-          <DarkCard title="Warranty" description="10 years product + 25 years performance on panels." />
+          <DarkCard title="Solar Panels" description="Tier-1 only: Jinko, Canadian Solar, JA Solar, Longi. 25-year performance warranty, proven in Kenyan conditions." />
+          <DarkCard title="Batteries" description="Lithium (LiFePO4) for longevity or AGM for budget builds — both locally serviceable with spare parts in Nairobi." />
+          <DarkCard title="Inverters" description="Victron Energy, Growatt, Schneider Electric — reliable, efficient, and backed by local distributors." />
+          <DarkCard title="Installation" description="EPRA-certified team. Professional mounting, proper earthing, surge protection, and full system documentation." />
+          <DarkCard title="Monitoring" description="PreciSense real-time dashboard included with every system. Track production, consumption, and battery health." />
+          <DarkCard title="Warranty" description="10 years product + 25 years performance on panels. Inverter and battery warranties honored locally." />
         </div>
       </Section>
 
-      <CTASection title="Go Solar with Nishati" subtitle="Get a free site assessment and customized solar proposal for your home, business, or farm." />
+      <CTASection title="Take Control of Your Energy Costs" subtitle="Get a free site assessment and customized solar proposal for your home, business, or farm. We respond within 24 hours." />
     </>
   );
 }

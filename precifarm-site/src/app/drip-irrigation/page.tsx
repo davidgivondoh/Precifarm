@@ -5,6 +5,7 @@ import {
   SectionHeader,
   DataTable,
   IncludesItem,
+  Step,
   CTASection,
 } from "@/components/ui";
 
@@ -19,9 +20,9 @@ export default function DripIrrigationPage() {
     <>
       <PageHero
         badge="&#128167; Precision Drip Irrigation"
-        title="90-95% Water Efficiency."
-        titleAccent="Maximum Yields."
-        subtitle="From quarter-acre kitchen gardens to 10+ acre commercial farms. Professional installation, agronomist support, and precision water delivery for every crop."
+        title="Every Drop Counts."
+        titleAccent="Every Harvest Proves It."
+        subtitle="Water is your most valuable input. Drip irrigation delivers it directly to the root zone — no waste, no runoff, no guesswork. Kenyan farmers using our systems report 20-50% higher yields while using 60% less water."
         meta={[
           { icon: "&#128176;", text: "From KES 45,000" },
           { icon: "&#128167;", text: "Save 60% Water" },
@@ -29,15 +30,48 @@ export default function DripIrrigationPage() {
         ]}
       />
 
+      {/* Image + Intro Split */}
+      <Section>
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=800&q=80"
+              alt="Drip irrigation kit with drip lines installed on rows of vegetables"
+              className="rounded-2xl w-full h-80 object-cover"
+            />
+          </div>
+          <div>
+            <h2 className="text-3xl font-bold text-navy-900 mb-4">Built for Kenyan Growing Conditions</h2>
+            <p className="text-gray-500 leading-relaxed mb-4">
+              From the volcanic soils of Mt. Kenya to the sandy loams of the Coast, our drip systems are designed around your specific soil type, crop selection, and water source. We do not sell generic kits — every installation is mapped and sized for your farm.
+            </p>
+            <p className="text-gray-500 leading-relaxed">
+              Whether you grow tomatoes, capsicum, onions, French beans for export, or flowers for the Nairobi auction, precision drip irrigation is the single most impactful investment you can make.
+            </p>
+          </div>
+        </div>
+      </Section>
+
+      {/* How It Works */}
+      <Section className="border-t border-gray-100">
+        <SectionHeader title="How It Works" subtitle="From your first call to water flowing at the root zone — here is what to expect." />
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <Step number="01" title="Farm Survey" description="We visit your farm, assess soil type, water source, slope, and crop plan to design the optimal layout." />
+          <Step number="02" title="System Design" description="Custom layout with pipe sizing, emitter spacing, filtration, and pressure calculations for your exact conditions." />
+          <Step number="03" title="Installation" description="Professional team lays mainlines, sub-mains, and drip tape. Filters and valves installed and pressure-tested." />
+          <Step number="04" title="Agronomist Support" description="Ongoing guidance on irrigation scheduling, fertigation, and crop management to maximize your returns." />
+        </div>
+      </Section>
+
       {/* Why Drip */}
       <Section>
-        <SectionHeader title="Why Drip Irrigation?" subtitle="The science is clear — drip irrigation outperforms every other method." />
+        <SectionHeader title="Why Drip Irrigation?" subtitle="The economics are clear — drip pays for itself within one or two growing seasons." />
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { title: "Save 60% Water", desc: "90-95% efficiency vs 50-60% for flood irrigation. Every drop counts." },
-            { title: "+20-50% Yields", desc: "Consistent water delivery produces consistent, uniform harvests." },
-            { title: "Cut Labor 50-70%", desc: "No manual watering — set it and run. Free your workforce for other tasks." },
-            { title: "Reduce Disease", desc: "Dry foliage reduces fungal issues and crop loss significantly." },
+            { title: "Save 60% Water", desc: "90-95% efficiency vs 50-60% for flood irrigation. In water-scarce areas, this is the difference between a crop and a loss." },
+            { title: "+20-50% Yields", desc: "Consistent, precise water delivery produces uniform crops with better size, quality, and market value." },
+            { title: "Cut Labor 50-70%", desc: "No manual watering crews. Set your system and redirect your workforce to harvesting, packing, and selling." },
+            { title: "Reduce Disease", desc: "Dry foliage means fewer fungal infections. Less crop loss, fewer chemicals, higher profit margins." },
           ].map((b) => (
             <div key={b.title} className="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-md transition-all">
               <h3 className="text-lg font-bold mb-2">{b.title}</h3>
@@ -47,8 +81,37 @@ export default function DripIrrigationPage() {
         </div>
       </Section>
 
-      {/* Quarter Acre */}
+      {/* Crops Image Split */}
       <Section className="border-t border-gray-100">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 className="text-3xl font-bold text-navy-900 mb-4">Proven Results Across Every Crop</h2>
+            <p className="text-gray-500 leading-relaxed mb-6">
+              Our systems are producing results on farms growing tomatoes, onions, capsicum, French beans, strawberries, herbs, flowers, tree seedlings, avocados, macadamia, and many more. If it grows in Kenyan soil, we have irrigated it.
+            </p>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="bg-white border border-gray-200 rounded-xl p-4 text-center">
+                <span className="text-2xl font-extrabold text-navy-900 block">500+</span>
+                <span className="text-xs text-gray-500">Farms Installed</span>
+              </div>
+              <div className="bg-white border border-gray-200 rounded-xl p-4 text-center">
+                <span className="text-2xl font-extrabold text-navy-900 block">47</span>
+                <span className="text-xs text-gray-500">Counties Served</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&q=80"
+              alt="Healthy green crops growing under drip irrigation"
+              className="rounded-2xl w-full h-80 object-cover"
+            />
+          </div>
+        </div>
+      </Section>
+
+      {/* Quarter Acre */}
+      <Section>
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
           <div className="flex items-center gap-3">
             <h2 className="text-2xl font-bold">Quarter-Acre Kit</h2>
@@ -56,7 +119,7 @@ export default function DripIrrigationPage() {
           </div>
           <span className="text-2xl font-extrabold text-navy-900">From KES 45,000</span>
         </div>
-        <p className="text-gray-500 mb-6">Best for: Kitchen gardens, trial plots, smallholder vegetables, tree seedlings</p>
+        <p className="text-gray-500 mb-6">Perfect for kitchen gardens, trial plots, smallholder vegetables, and tree seedlings. Start small, prove the results, and scale up.</p>
         <DataTable
           headers={["Option", "Price"]}
           rows={[
@@ -76,7 +139,7 @@ export default function DripIrrigationPage() {
       </Section>
 
       {/* Half Acre */}
-      <Section>
+      <Section className="border-t border-gray-100">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
           <div className="flex items-center gap-3">
             <h2 className="text-2xl font-bold">Half-Acre Kit</h2>
@@ -84,7 +147,7 @@ export default function DripIrrigationPage() {
           </div>
           <span className="text-2xl font-extrabold text-navy-900">From KES 75,000</span>
         </div>
-        <p className="text-gray-500 mb-6">Best for: Smallholder vegetables, market gardens, tomatoes, capsicum, onions</p>
+        <p className="text-gray-500 mb-6">Ideal for smallholder commercial farming — tomatoes, capsicum, onions, and market vegetables. The sweet spot for farmers transitioning from rain-fed to irrigated agriculture.</p>
         <DataTable
           headers={["Option", "Price"]}
           rows={[
@@ -103,7 +166,7 @@ export default function DripIrrigationPage() {
       </Section>
 
       {/* One Acre (Featured) */}
-      <Section className="border-t border-gray-100">
+      <Section>
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
           <div className="flex items-center gap-3">
             <h2 className="text-2xl font-bold">One-Acre Kit</h2>
@@ -111,7 +174,7 @@ export default function DripIrrigationPage() {
           </div>
           <span className="text-2xl font-extrabold text-navy-900">From KES 85,000</span>
         </div>
-        <p className="text-gray-500 mb-6">Best for: Commercial vegetable farming, intensive horticulture, export crops</p>
+        <p className="text-gray-500 mb-6">Our most requested package. Built for serious commercial vegetable farming, intensive horticulture, and export-grade crop production.</p>
         <DataTable
           headers={["Configuration", "Kit Only", "Installed"]}
           rows={[
@@ -136,14 +199,14 @@ export default function DripIrrigationPage() {
       </Section>
 
       {/* Multi-Acre */}
-      <Section>
+      <Section className="border-t border-gray-100">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
           <div className="flex items-center gap-3">
             <h2 className="text-2xl font-bold">Multi-Acre Systems</h2>
             <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-semibold">2-10 Acres</span>
           </div>
         </div>
-        <p className="text-gray-500 mb-6">Best for: Medium to large commercial farms, agro-processors, flower farms</p>
+        <p className="text-gray-500 mb-6">Engineered for medium to large commercial operations — flower farms, agro-processors, institutional farms, and county government projects.</p>
         <DataTable
           headers={["Scale", "Configuration", "Price"]}
           rows={[
@@ -166,8 +229,8 @@ export default function DripIrrigationPage() {
       </Section>
 
       {/* Components Price List */}
-      <Section className="border-t border-gray-100">
-        <SectionHeader title="Components Price List" subtitle="Individual and replacement components available for purchase." />
+      <Section>
+        <SectionHeader title="Components Price List" subtitle="Need replacements or building a custom system? Individual components available for purchase and delivery across Kenya." />
         <DataTable
           headers={["Component", "Specification", "Unit Price"]}
           rows={[
@@ -188,7 +251,7 @@ export default function DripIrrigationPage() {
         />
       </Section>
 
-      <CTASection title="Start Saving Water Today" subtitle="Get a customized irrigation plan and quote for your farm — response within 24 hours." />
+      <CTASection title="Ready to Grow More with Less Water?" subtitle="Get a customized irrigation plan and quote for your farm — we respond within 24 hours and site visits are always free." />
     </>
   );
 }

@@ -1,3 +1,5 @@
-:HL["/_next/static/chunks/21f221ccbb7f11e0.css","style"]
+:HL["/_next/static/chunks/d734482a903293d6.css","style"]
 :HL["/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-0:{"buildId":"2IHI6lH-yyelqCHBzn94o","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"farm-design","paramType":null,"paramKey":"farm-design","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+:HL["https://images.unsplash.com/photo-1586771107445-b3e19d0e1a44?w=800&q=80","image"]
+:HL["https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=800&q=80","image"]
+0:{"buildId":"XF0qhLFbCD7H4qvHTUl7r","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"farm-design","paramType":null,"paramKey":"farm-design","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
