@@ -22,8 +22,8 @@ export function Section({
     navy: "bg-gradient-navy text-white",
   };
   return (
-    <section id={id} className={`py-20 md:py-24 ${bgMap[background] ?? ""} ${className}`}>
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">{children}</div>
+    <section id={id} className={`py-14 md:py-20 lg:py-24 ${bgMap[background] ?? ""} ${className}`}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">{children}</div>
     </section>
   );
 }
@@ -39,16 +39,16 @@ export function SectionHeader({
   light?: boolean;
 }) {
   return (
-    <div className="text-center max-w-2xl mx-auto mb-14">
+    <div className="text-center max-w-2xl mx-auto mb-10 md:mb-14">
       <h2
-        className={`text-3xl md:text-4xl font-bold tracking-tight ${
+        className={`text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight ${
           light ? "text-white" : "text-navy-900"
         }`}
       >
         {title}
       </h2>
       {subtitle && (
-        <p className={`mt-4 text-lg leading-relaxed ${light ? "text-gray-300" : "text-gray-500"}`}>
+        <p className={`mt-3 md:mt-4 text-base md:text-lg leading-relaxed ${light ? "text-gray-300" : "text-gray-500"}`}>
           {subtitle}
         </p>
       )}
@@ -229,8 +229,8 @@ export function Testimonial({
 /* ── Stat card ── */
 export function StatCard({ value, label }: { value: string; label: string }) {
   return (
-    <div className="bg-white border border-warm-200 rounded-2xl p-8 text-center shadow-sm card-lift">
-      <span className="text-3xl md:text-4xl font-extrabold text-navy-900 block tracking-tight">
+    <div className="bg-white border border-warm-200 rounded-2xl p-5 sm:p-8 text-center shadow-sm card-lift">
+      <span className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-navy-900 block tracking-tight">
         {value}
       </span>
       <span className="text-sm text-gray-500 mt-2 block">{label}</span>
@@ -326,7 +326,7 @@ export function PricingCard({
 }) {
   return (
     <div
-      className={`relative bg-white rounded-2xl p-8 transition-all card-lift ${
+      className={`relative bg-white rounded-2xl p-6 sm:p-8 transition-all card-lift ${
         featured
           ? "border-2 border-navy-900 shadow-lg ring-1 ring-navy-900/5"
           : "border border-warm-200 shadow-sm hover:border-gray-300"
@@ -377,14 +377,14 @@ export function DataTable({
   featuredRow?: number;
 }) {
   return (
-    <div className="overflow-x-auto rounded-2xl border border-warm-200 bg-white shadow-sm">
-      <table className="w-full border-collapse">
+    <div className="overflow-x-auto -mx-4 sm:mx-0 rounded-none sm:rounded-2xl border border-warm-200 bg-white shadow-sm">
+      <table className="w-full border-collapse min-w-[400px]">
         <thead className="bg-navy-900 text-white">
           <tr>
             {headers.map((h, i) => (
               <th
                 key={i}
-                className="px-5 py-4 text-left text-xs font-semibold uppercase tracking-wider"
+                className="px-3 sm:px-5 py-3 sm:py-4 text-left text-[11px] sm:text-xs font-semibold uppercase tracking-wider"
               >
                 {h}
               </th>
@@ -402,7 +402,7 @@ export function DataTable({
               {row.map((cell, ci) => (
                 <td
                   key={ci}
-                  className={`px-5 py-4 text-sm ${
+                  className={`px-3 sm:px-5 py-3 sm:py-4 text-xs sm:text-sm ${
                     ci === row.length - 1 ? "font-semibold text-navy-900" : "text-gray-700"
                   }`}
                 >
@@ -442,10 +442,10 @@ export function CTASection({
   primaryText?: string;
 }) {
   return (
-    <section className="py-20 md:py-24 bg-gray-50 border-t border-gray-200 text-center">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight text-navy-900">{title}</h2>
-        <p className="text-gray-500 max-w-md mx-auto mb-10 text-lg leading-relaxed">{subtitle}</p>
+    <section className="py-14 md:py-20 lg:py-24 bg-gray-50 border-t border-gray-200 text-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 tracking-tight text-navy-900">{title}</h2>
+        <p className="text-gray-500 max-w-md mx-auto mb-8 md:mb-10 text-base md:text-lg leading-relaxed">{subtitle}</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href={primaryHref}
@@ -479,7 +479,7 @@ export function Step({
 }) {
   return (
     <div className="text-center">
-      <div className="w-14 h-14 bg-navy-900 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-5 shadow-sm">
+      <div className="w-12 h-12 sm:w-14 sm:h-14 bg-navy-900 text-white rounded-full flex items-center justify-center text-lg sm:text-xl font-bold mx-auto mb-4 sm:mb-5 shadow-sm">
         {number}
       </div>
       <h4 className="font-bold text-navy-900 mb-2">{title}</h4>

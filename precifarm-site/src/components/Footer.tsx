@@ -3,18 +3,18 @@ import { LogoMarkLight } from "./Logo";
 
 export function Footer() {
   return (
-    <footer className="bg-navy-900 text-gray-400 pt-16 pb-8">
-      <div className="max-w-7xl mx-auto px-6">
+    <footer className="bg-navy-900 text-gray-400 pt-12 sm:pt-16 pb-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Tagline Banner */}
-        <div className="border-b border-navy-700 pb-10 mb-12 text-center">
-          <h3 className="text-white text-2xl md:text-3xl font-bold mb-3">Precision Agriculture. Engineered for Kenya.</h3>
-          <p className="text-gray-400 text-base max-w-xl mx-auto">
+        <div className="border-b border-navy-700 pb-8 sm:pb-10 mb-8 sm:mb-12 text-center">
+          <h3 className="text-white text-xl sm:text-2xl md:text-3xl font-bold mb-3">Precision Agriculture. Engineered for Kenya.</h3>
+          <p className="text-gray-400 text-sm sm:text-base max-w-xl mx-auto">
             Solar pumps, drip irrigation, farm design, and clean energy — built for Kenyan soil, water, and sunlight.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-          <div>
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 mb-8 sm:mb-12">
+          <div className="col-span-2 lg:col-span-1">
             <Link href="/" className="mb-4 inline-block">
               <LogoMarkLight />
             </Link>

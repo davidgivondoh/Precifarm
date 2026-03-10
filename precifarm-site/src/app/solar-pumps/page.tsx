@@ -47,17 +47,17 @@ export default function SolarPumpsPage() {
           />
           <div className="absolute inset-0 bg-linear-to-r from-navy-900/90 via-navy-900/70 to-navy-900/30" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-6 py-32 w-full">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-20 sm:py-28 md:py-32 w-full">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-semibold mb-6 bg-white/15 text-white backdrop-blur-sm">
             Solar Pumping Systems
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-white mb-3 leading-[1.1] tracking-tight max-w-2xl">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-white mb-3 leading-[1.1] tracking-tight max-w-2xl">
             Stop Paying for Diesel.
           </h1>
-          <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-gray-300 mb-6 leading-[1.1] tracking-tight max-w-2xl">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-gray-300 mb-6 leading-[1.1] tracking-tight max-w-2xl">
             Start Pumping Free Water.
           </h1>
-          <p className="text-lg text-gray-300 max-w-xl leading-relaxed mb-10">
+          <p className="text-base sm:text-lg text-gray-300 max-w-xl leading-relaxed mb-8 sm:mb-10">
             Turnkey solar pump systems that deliver water every single day — no fuel bills, no generator noise, no KPLC dependency. Just sunlight and water.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -74,21 +74,21 @@ export default function SolarPumpsPage() {
               View Packages
             </Link>
           </div>
-          <div className="flex flex-wrap gap-6">
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-5 py-3 text-center">
-              <span className="text-2xl font-extrabold text-white block">KES 145K</span>
+          <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-3 sm:gap-6">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-4 sm:px-5 py-2.5 sm:py-3 text-center">
+              <span className="text-xl sm:text-2xl font-extrabold text-white block">KES 145K</span>
               <span className="text-xs text-gray-300">Starting Price</span>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-5 py-3 text-center">
-              <span className="text-2xl font-extrabold text-white block">99.2%</span>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-4 sm:px-5 py-2.5 sm:py-3 text-center">
+              <span className="text-xl sm:text-2xl font-extrabold text-white block">99.2%</span>
               <span className="text-xs text-gray-300">Uptime Guarantee</span>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-5 py-3 text-center">
-              <span className="text-2xl font-extrabold text-white block">7-12</span>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-4 sm:px-5 py-2.5 sm:py-3 text-center">
+              <span className="text-xl sm:text-2xl font-extrabold text-white block">7-12</span>
               <span className="text-xs text-gray-300">Days to Install</span>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-5 py-3 text-center">
-              <span className="text-2xl font-extrabold text-white block">25 yr</span>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-4 sm:px-5 py-2.5 sm:py-3 text-center">
+              <span className="text-xl sm:text-2xl font-extrabold text-white block">25 yr</span>
               <span className="text-xs text-gray-300">System Lifespan</span>
             </div>
           </div>
@@ -124,7 +124,7 @@ export default function SolarPumpsPage() {
         <div className="grid md:grid-cols-2 gap-8">
           {/* Diesel Card */}
           <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
-            <div className="bg-gray-50 px-8 py-5 border-b border-gray-200">
+            <div className="bg-gray-50 px-5 sm:px-8 py-4 sm:py-5 border-b border-gray-200">
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Old Way</p>
@@ -133,7 +133,7 @@ export default function SolarPumpsPage() {
                 <span className="text-3xl">&#9981;&#65039;</span>
               </div>
             </div>
-            <div className="p-8 space-y-5">
+            <div className="p-5 sm:p-8 space-y-4 sm:space-y-5">
               {[
                 { label: "Daily fuel", value: "KES 1,500 - 4,000" },
                 { label: "Monthly cost", value: "KES 45,000 - 120,000" },
@@ -154,7 +154,7 @@ export default function SolarPumpsPage() {
           {/* Solar Card */}
           <div className="bg-white rounded-2xl border-2 border-green-500 overflow-hidden relative shadow-lg">
             <span className="absolute top-4 right-4 bg-green-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Recommended</span>
-            <div className="bg-green-50 px-8 py-5 border-b border-green-100">
+            <div className="bg-green-50 px-5 sm:px-8 py-4 sm:py-5 border-b border-green-100">
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-xs font-bold text-green-500 uppercase tracking-widest mb-1">Smart Way</p>
@@ -163,7 +163,7 @@ export default function SolarPumpsPage() {
                 <span className="text-3xl">&#9728;&#65039;</span>
               </div>
             </div>
-            <div className="p-8 space-y-5">
+            <div className="p-5 sm:p-8 space-y-4 sm:space-y-5">
               {[
                 { label: "Daily fuel", value: "KES 0", highlight: true },
                 { label: "Monthly cost", value: "KES 0", highlight: true },
@@ -234,7 +234,7 @@ export default function SolarPumpsPage() {
       </Section>
 
       {/* Large installation image */}
-      <section className="relative h-88 overflow-hidden">
+      <section className="relative h-56 sm:h-72 md:h-88 overflow-hidden">
         <img
           src="/images/solar-pump-irrigation-system.webp"
           alt="Technician installing elevated solar panel array for irrigation pump system"

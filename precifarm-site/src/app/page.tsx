@@ -58,16 +58,16 @@ export default function Home() {
           />
           <div className="absolute inset-0 bg-linear-to-r from-navy-900/90 via-navy-900/75 to-navy-900/40" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-6 py-32 w-full">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-20 sm:py-28 md:py-32 w-full">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             <div>
-              <p className="text-sm font-medium text-gray-300 uppercase tracking-widest mb-5">
+              <p className="text-xs sm:text-sm font-medium text-gray-300 uppercase tracking-widest mb-4 sm:mb-5">
                 Innovative irrigation for semi-arid Kenya
               </p>
-              <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-white mb-6 leading-[1.1] tracking-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-white mb-5 sm:mb-6 leading-[1.1] tracking-tight">
                 Water solutions that transform smallholder farms
               </h1>
-              <p className="text-lg text-gray-300 max-w-xl leading-relaxed mb-10">
+              <p className="text-base sm:text-lg text-gray-300 max-w-xl leading-relaxed mb-8 sm:mb-10">
                 We help smallholder farmers in semi-arid Kenya access reliable water through
                 solar-powered pumping and precision drip irrigation. Our systems cut water waste
                 by 60%, eliminate fuel costs, and pay for themselves within 18 months.
@@ -88,7 +88,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex justify-center">
-              <div className="grid grid-cols-2 gap-5 max-w-sm w-full">
+              <div className="grid grid-cols-2 gap-3 sm:gap-5 max-w-sm w-full">
                 <StatCard value="850+" label="Farms Powered" />
                 <StatCard value="99.2%" label="System Uptime" />
                 <StatCard value="38" label="Counties Reached" />
@@ -100,9 +100,9 @@ export default function Home() {
       </section>
 
       {/* Social proof strip */}
-      <section className="py-6 bg-gray-50 border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-6">
-          <p className="text-center text-sm text-gray-400 font-medium tracking-wide">
+      <section className="py-4 sm:py-6 bg-gray-50 border-b border-gray-100 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <p className="text-center text-xs sm:text-sm text-gray-400 font-medium tracking-wide">
             SERVING FARMERS IN KAJIADO &bull; MACHAKOS &bull; KITUI &bull; LAIKIPIA &bull; NAKURU &bull; NAROK &bull; BARINGO &bull; TURKANA
           </p>
         </div>
@@ -131,7 +131,7 @@ export default function Home() {
             href="/farm-design"
             title="Farm Design & Engineering"
             description="We survey your land, design the hydraulics, and manage the entire project. A farm engineered for maximum yield and minimum waste."
-            image="/images/drip-kit-installation.jpg"
+            image="/images/drip-irrigation-main.jpg"
           />
           <FeatureCard
             href="/solar-energy"
@@ -143,15 +143,15 @@ export default function Home() {
       </Section>
 
       {/* Visual break — water infrastructure */}
-      <section className="relative h-100 overflow-hidden">
+      <section className="relative h-64 sm:h-80 md:h-100 overflow-hidden">
         <img
           src="/images/sp500.jpg"
           alt="Solar-powered water pumping system with dual panels delivering water to farm"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-linear-to-t from-navy-900/70 to-transparent flex items-end">
-          <div className="max-w-7xl mx-auto px-6 pb-12 w-full">
-            <p className="text-white text-2xl md:text-3xl font-bold max-w-2xl">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-8 sm:pb-12 w-full">
+            <p className="text-white text-xl sm:text-2xl md:text-3xl font-bold max-w-2xl">
               From water source to crop root — we engineer every connection for reliability and efficiency.
             </p>
           </div>
@@ -173,7 +173,7 @@ export default function Home() {
             { num: "05", title: "Fully EPRA Compliant", desc: "Every solar installation meets Energy and Petroleum Regulatory Authority standards. Proper permits, proper engineering, proper peace of mind." },
             { num: "06", title: "PreciSense Remote Monitoring", desc: "See exactly how your system is performing from your phone. Get SMS alerts if anything needs attention — before it becomes a problem." },
           ].map((item) => (
-            <div key={item.num} className="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-md transition-all">
+            <div key={item.num} className="bg-white border border-gray-200 rounded-2xl p-5 sm:p-8 hover:shadow-md transition-all">
               <span className="text-xs font-bold text-gray-300 tracking-widest mb-3 block">{item.num}</span>
               <h3 className="text-base font-bold text-navy-900 mb-2">{item.title}</h3>
               <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
@@ -188,12 +188,12 @@ export default function Home() {
           title="What Our Farmers Say"
           subtitle="Real results from real farms across Kenya."
         />
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-6 sm:gap-8">
           <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
             <div className="h-48 overflow-hidden">
-              <img src="/images/farmer1.jfif" alt="Faith Mwangi, paw paw farmer in Naivasha" className="w-full h-full object-cover" />
+              <img src="/images/farmer1.jfif" alt="Halima Abdi, paw paw farmer in Garissa" className="w-full h-full object-cover" />
             </div>
-            <div className="p-8">
+            <div className="p-5 sm:p-8">
               <div className="flex gap-1 mb-4 text-amber-400 text-lg">
                 &#9733;&#9733;&#9733;&#9733;&#9733;
               </div>
@@ -201,8 +201,8 @@ export default function Home() {
                 &ldquo;My paw paw trees were struggling with inconsistent watering from my old diesel pump. Since Precifarm installed the solar pump system, I have reliable water every day and my fruit quality has improved dramatically. The system paid for itself in 14 months through fuel savings alone.&rdquo;
               </p>
               <div>
-                <p className="font-bold text-navy-900 text-sm">Faith Mwangi</p>
-                <p className="text-xs text-gray-400">Paw paw farmer, Naivasha &bull; 3-acre farm</p>
+                <p className="font-bold text-navy-900 text-sm">Halima Abdi</p>
+                <p className="text-xs text-gray-400">Paw paw farmer, Garissa &bull; 3-acre farm</p>
               </div>
             </div>
           </div>
@@ -210,7 +210,7 @@ export default function Home() {
             <div className="h-48 overflow-hidden">
               <img src="/images/farmer2.jfif" alt="Mary Wanjiku, vegetable grower in Nyandarua" className="w-full h-full object-cover" />
             </div>
-            <div className="p-8">
+            <div className="p-5 sm:p-8">
               <div className="flex gap-1 mb-4 text-amber-400 text-lg">
                 &#9733;&#9733;&#9733;&#9733;&#9733;
               </div>
@@ -225,9 +225,9 @@ export default function Home() {
           </div>
           <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
             <div className="h-48 overflow-hidden">
-              <img src="/images/farmer3.jpeg" alt="Grace Kimani, tomato farmer in Nakuru" className="w-full h-full object-cover" />
+              <img src="/images/farmer3.jpeg" alt="Mary Mutheu, tomato farmer in Nakuru" className="w-full h-full object-cover" />
             </div>
-            <div className="p-8">
+            <div className="p-5 sm:p-8">
               <div className="flex gap-1 mb-4 text-amber-400 text-lg">
                 &#9733;&#9733;&#9733;&#9733;&#9733;
               </div>
@@ -235,7 +235,7 @@ export default function Home() {
                 &ldquo;My tomato greenhouse needed reliable water and power. Precifarm handled everything — solar panels, pumps, drip lines, and the monitoring system. My tomato harvests have increased by 40% and I no longer lose crops to irregular watering.&rdquo;
               </p>
               <div>
-                <p className="font-bold text-navy-900 text-sm">Grace Kimani</p>
+                <p className="font-bold text-navy-900 text-sm">Mary Mutheu</p>
                 <p className="text-xs text-gray-400">Tomato farmer, Nakuru &bull; 5-acre farm</p>
               </div>
             </div>
@@ -297,11 +297,11 @@ export default function Home() {
       />
 
       {/* Quote Form */}
-      <section id="quote" className="py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
-            <div className="pt-4">
-              <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mb-4">
+      <section id="quote" className="py-14 sm:py-20 md:py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+            <div className="pt-0 lg:pt-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-navy-900 mb-4">
                 Tell Us About Your Farm
               </h2>
               <p className="text-gray-500 leading-relaxed mb-8">
@@ -334,13 +334,13 @@ export default function Home() {
               </div>
               <div className="mt-10">
                 <img
-                  src="/images/drip-kit-installation.jpg"
-                  alt="Drip irrigation kit fittings installed on Kenyan farmland"
+                  src="/images/drip-irrigation-main.jpg"
+                  alt="Drip irrigation system installed on Kenyan farmland"
                   className="rounded-2xl w-full h-48 object-cover"
                 />
               </div>
             </div>
-            <div className="bg-white rounded-3xl p-8 md:p-10 shadow-lg border border-gray-100">
+            <div className="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-10 shadow-lg border border-gray-100">
               <h3 className="text-xl font-bold text-center mb-1 text-navy-900">Get Your Free Quote</h3>
               <p className="text-center text-gray-400 text-sm mb-8">No obligation. No pressure. Just honest engineering advice.</p>
               <QuoteForm />

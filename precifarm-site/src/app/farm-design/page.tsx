@@ -47,17 +47,17 @@ export default function FarmDesignPage() {
           />
           <div className="absolute inset-0 bg-linear-to-r from-navy-900/90 via-navy-900/70 to-navy-900/30" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-6 py-32 w-full">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-20 sm:py-28 md:py-32 w-full">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-semibold mb-6 bg-white/15 text-white backdrop-blur-sm">
             Farm Design Services
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-white mb-3 leading-[1.1] tracking-tight max-w-2xl">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-white mb-3 leading-[1.1] tracking-tight max-w-2xl">
             Your Farm,
           </h1>
-          <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-gray-300 mb-6 leading-[1.1] tracking-tight max-w-2xl">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-gray-300 mb-6 leading-[1.1] tracking-tight max-w-2xl">
             Engineered for Profit.
           </h1>
-          <p className="text-lg text-gray-300 max-w-xl leading-relaxed mb-10">
+          <p className="text-base sm:text-lg text-gray-300 max-w-xl leading-relaxed mb-8 sm:mb-10">
             Great farms are not accidents — they are engineered. We bring together water, pumping, storage, irrigation, energy, and automation into a single integrated design that maximizes your return on every hectare.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -74,21 +74,21 @@ export default function FarmDesignPage() {
               View Service Tiers
             </Link>
           </div>
-          <div className="flex flex-wrap gap-6">
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-5 py-3 text-center">
-              <span className="text-2xl font-extrabold text-white block">5-500+</span>
+          <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-3 sm:gap-6">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-4 sm:px-5 py-2.5 sm:py-3 text-center">
+              <span className="text-xl sm:text-2xl font-extrabold text-white block">5-500+</span>
               <span className="text-xs text-gray-300">Hectares</span>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-5 py-3 text-center">
-              <span className="text-2xl font-extrabold text-white block">KES 150K</span>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-4 sm:px-5 py-2.5 sm:py-3 text-center">
+              <span className="text-xl sm:text-2xl font-extrabold text-white block">KES 150K</span>
               <span className="text-xs text-gray-300">Starting Price</span>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-5 py-3 text-center">
-              <span className="text-2xl font-extrabold text-white block">15-30%</span>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-4 sm:px-5 py-2.5 sm:py-3 text-center">
+              <span className="text-xl sm:text-2xl font-extrabold text-white block">15-30%</span>
               <span className="text-xs text-gray-300">Cost Savings</span>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-5 py-3 text-center">
-              <span className="text-2xl font-extrabold text-white block">38</span>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-4 sm:px-5 py-2.5 sm:py-3 text-center">
+              <span className="text-xl sm:text-2xl font-extrabold text-white block">38</span>
               <span className="text-xs text-gray-300">Counties Served</span>
             </div>
           </div>
@@ -150,7 +150,7 @@ export default function FarmDesignPage() {
       </Section>
 
       {/* Visual break */}
-      <section className="relative h-88 overflow-hidden">
+      <section className="relative h-56 sm:h-72 md:h-88 overflow-hidden">
         <img
           src="/images/professional-farm-design.jpg"
           alt="Professional center pivot irrigation system with mountain landscape backdrop"
@@ -170,7 +170,7 @@ export default function FarmDesignPage() {
         <SectionHeader title="Service Tiers" subtitle="Choose the right level of engineering for your project. Every tier includes site visits, professional drawings, and a detailed bill of quantities." />
 
         {/* Tier 1 */}
-        <div className="bg-white border border-gray-200 rounded-2xl p-8 mb-8">
+        <div className="bg-white border border-gray-200 rounded-2xl p-5 sm:p-8 mb-6 sm:mb-8">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
             <div className="flex items-center gap-3">
               <h3 className="text-xl font-bold text-navy-900">Tier 1 — Irrigation Design</h3>
@@ -215,7 +215,7 @@ export default function FarmDesignPage() {
         </div>
 
         {/* Tier 2 — Featured */}
-        <div className="bg-white border-2 border-green-500 rounded-2xl p-8 mb-8 relative shadow-lg">
+        <div className="bg-white border-2 border-green-500 rounded-2xl p-5 sm:p-8 mb-6 sm:mb-8 relative shadow-lg">
           <span className="absolute -top-3 right-6 bg-green-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Most Requested</span>
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
             <div className="flex items-center gap-3">
@@ -262,7 +262,7 @@ export default function FarmDesignPage() {
         </div>
 
         {/* Tier 3 */}
-        <div className="bg-white border border-gray-200 rounded-2xl p-8 md:p-10">
+        <div className="bg-white border border-gray-200 rounded-2xl p-5 sm:p-8 md:p-10">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
             <div className="flex items-center gap-3">
               <h3 className="text-xl font-bold text-navy-900">Tier 3 — Turnkey Farm Development</h3>

@@ -47,15 +47,15 @@ export default function SolarEnergyPage() {
           />
           <div className="absolute inset-0 bg-linear-to-r from-navy-900/90 via-navy-900/70 to-navy-900/30" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-6 py-32 w-full">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-20 sm:py-28 md:py-32 w-full">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-semibold mb-6 bg-white/15 text-white backdrop-blur-sm">
             Nishati by Precifarm
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-white mb-6 leading-[1.1] tracking-tight max-w-2xl">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-white mb-6 leading-[1.1] tracking-tight max-w-2xl">
             Own Your Power.{" "}
             <span className="text-gray-300">Stop Renting It.</span>
           </h1>
-          <p className="text-lg text-gray-300 max-w-xl leading-relaxed mb-10">
+          <p className="text-base sm:text-lg text-gray-300 max-w-xl leading-relaxed mb-8 sm:mb-10">
             KPLC bills keep rising. Load-shedding keeps disrupting. Generators keep burning money. Nishati solar systems give you energy independence — you own the system outright from day one.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -72,21 +72,21 @@ export default function SolarEnergyPage() {
               View Packages
             </Link>
           </div>
-          <div className="flex flex-wrap gap-6">
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-5 py-3 text-center">
-              <span className="text-2xl font-extrabold text-white block">KES 35K</span>
+          <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-3 sm:gap-6">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-4 sm:px-5 py-2.5 sm:py-3 text-center">
+              <span className="text-xl sm:text-2xl font-extrabold text-white block">KES 35K</span>
               <span className="text-xs text-gray-300">Starting Price</span>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-5 py-3 text-center">
-              <span className="text-2xl font-extrabold text-white block">25 Yrs</span>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-4 sm:px-5 py-2.5 sm:py-3 text-center">
+              <span className="text-xl sm:text-2xl font-extrabold text-white block">25 Yrs</span>
               <span className="text-xs text-gray-300">Panel Warranty</span>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-5 py-3 text-center">
-              <span className="text-2xl font-extrabold text-white block">3-7 Days</span>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-4 sm:px-5 py-2.5 sm:py-3 text-center">
+              <span className="text-xl sm:text-2xl font-extrabold text-white block">3-7 Days</span>
               <span className="text-xs text-gray-300">Installation</span>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-5 py-3 text-center">
-              <span className="text-2xl font-extrabold text-white block">EPRA</span>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-4 sm:px-5 py-2.5 sm:py-3 text-center">
+              <span className="text-xl sm:text-2xl font-extrabold text-white block">EPRA</span>
               <span className="text-xs text-gray-300">Certified</span>
             </div>
           </div>
@@ -149,7 +149,7 @@ export default function SolarEnergyPage() {
       </Section>
 
       {/* Visual break */}
-      <section className="relative h-88 overflow-hidden">
+      <section className="relative h-56 sm:h-72 md:h-88 overflow-hidden">
         <img
           src="/images/solarpanels.jpg"
           alt="Large-scale solar panel array powering agricultural operations"
@@ -192,7 +192,7 @@ export default function SolarEnergyPage() {
         <SectionHeader title="Home Solar Packages" subtitle="Reliable household power — lights, TV, phone charging, refrigerator, and full home electrification. End load-shedding at home." />
         <div className="grid sm:grid-cols-3 gap-6">
           {/* Basic */}
-          <div className="bg-white border border-gray-200 rounded-2xl p-8">
+          <div className="bg-white border border-gray-200 rounded-2xl p-5 sm:p-8">
             <h3 className="text-xl font-bold text-navy-900 mb-1">Basic Home</h3>
             <p className="text-sm text-gray-500 mb-4">300W / 200Ah</p>
             <span className="text-2xl font-extrabold text-navy-900 block mb-1">KES 35,000 <small className="text-sm font-medium text-gray-500">- 55,000</small></span>
@@ -209,7 +209,7 @@ export default function SolarEnergyPage() {
             </Link>
           </div>
           {/* Standard — Featured */}
-          <div className="bg-white border-2 border-green-500 rounded-2xl p-8 relative shadow-lg">
+          <div className="bg-white border-2 border-green-500 rounded-2xl p-5 sm:p-8 relative shadow-lg">
             <span className="absolute -top-3 right-6 bg-green-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Most Popular</span>
             <h3 className="text-xl font-bold text-navy-900 mb-1">Standard Home</h3>
             <p className="text-sm text-gray-500 mb-4">600W / 400Ah</p>
@@ -227,7 +227,7 @@ export default function SolarEnergyPage() {
             </Link>
           </div>
           {/* Premium */}
-          <div className="bg-white border border-gray-200 rounded-2xl p-8">
+          <div className="bg-white border border-gray-200 rounded-2xl p-5 sm:p-8">
             <h3 className="text-xl font-bold text-navy-900 mb-1">Premium Home</h3>
             <p className="text-sm text-gray-500 mb-4">1.5 kW / 800Ah</p>
             <span className="text-2xl font-extrabold text-navy-900 block mb-1">KES 180,000 <small className="text-sm font-medium text-gray-500">- 280,000</small></span>
@@ -250,7 +250,7 @@ export default function SolarEnergyPage() {
       <Section>
         <SectionHeader title="Business Solar Packages" subtitle="Keep your business running through outages. Protect revenue, reduce electricity costs, and eliminate generator dependency." />
         <div className="grid sm:grid-cols-3 gap-6">
-          <div className="bg-white border border-gray-200 rounded-2xl p-8">
+          <div className="bg-white border border-gray-200 rounded-2xl p-5 sm:p-8">
             <h3 className="text-xl font-bold text-navy-900 mb-1">SME Starter</h3>
             <p className="text-sm text-gray-500 mb-4">1-2 kW / 400Ah</p>
             <span className="text-2xl font-extrabold text-navy-900 block mb-1">KES 120,000 <small className="text-sm font-medium text-gray-500">- 200,000</small></span>
@@ -265,7 +265,7 @@ export default function SolarEnergyPage() {
               Get a Quote
             </Link>
           </div>
-          <div className="bg-white border-2 border-green-500 rounded-2xl p-8 relative shadow-lg">
+          <div className="bg-white border-2 border-green-500 rounded-2xl p-5 sm:p-8 relative shadow-lg">
             <span className="absolute -top-3 right-6 bg-green-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Most Popular</span>
             <h3 className="text-xl font-bold text-navy-900 mb-1">SME Standard</h3>
             <p className="text-sm text-gray-500 mb-4">3-5 kW / 800Ah</p>
@@ -281,7 +281,7 @@ export default function SolarEnergyPage() {
               Get a Quote
             </Link>
           </div>
-          <div className="bg-white border border-gray-200 rounded-2xl p-8">
+          <div className="bg-white border border-gray-200 rounded-2xl p-5 sm:p-8">
             <h3 className="text-xl font-bold text-navy-900 mb-1">Commercial</h3>
             <p className="text-sm text-gray-500 mb-4">10-50 kW</p>
             <span className="text-2xl font-extrabold text-navy-900 block mb-1">KES 1.2M <small className="text-sm font-medium text-gray-500">- 6M+</small></span>
@@ -303,7 +303,7 @@ export default function SolarEnergyPage() {
       <Section className="bg-gray-50">
         <SectionHeader title="Farm Solar Packages" subtitle="Power your cold storage, agro-processing, security lighting, and pump systems — all from the sun. Designed for rural and off-grid locations." />
         <div className="grid sm:grid-cols-3 gap-6">
-          <div className="bg-white border border-gray-200 rounded-2xl p-8">
+          <div className="bg-white border border-gray-200 rounded-2xl p-5 sm:p-8">
             <h3 className="text-xl font-bold text-navy-900 mb-1">Farm Basic</h3>
             <p className="text-sm text-gray-500 mb-4">2 kW / 400Ah</p>
             <span className="text-2xl font-extrabold text-navy-900 block mb-1">KES 180,000 <small className="text-sm font-medium text-gray-500">- 280,000</small></span>
@@ -317,7 +317,7 @@ export default function SolarEnergyPage() {
               Get a Quote
             </Link>
           </div>
-          <div className="bg-white border-2 border-green-500 rounded-2xl p-8 relative shadow-lg">
+          <div className="bg-white border-2 border-green-500 rounded-2xl p-5 sm:p-8 relative shadow-lg">
             <span className="absolute -top-3 right-6 bg-green-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Recommended</span>
             <h3 className="text-xl font-bold text-navy-900 mb-1">Farm Standard</h3>
             <p className="text-sm text-gray-500 mb-4">5 kW / 800Ah</p>
@@ -333,7 +333,7 @@ export default function SolarEnergyPage() {
               Get a Quote
             </Link>
           </div>
-          <div className="bg-white border border-gray-200 rounded-2xl p-8">
+          <div className="bg-white border border-gray-200 rounded-2xl p-5 sm:p-8">
             <h3 className="text-xl font-bold text-navy-900 mb-1">Farm Commercial</h3>
             <p className="text-sm text-gray-500 mb-4">10-30 kW</p>
             <span className="text-2xl font-extrabold text-navy-900 block mb-1">KES 1M <small className="text-sm font-medium text-gray-500">- 4M+</small></span>
