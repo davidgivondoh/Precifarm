@@ -175,7 +175,7 @@ export default function RootLayout({
         <OrganizationSchema />
         <LocalBusinessSchema />
       </head>
-      <body className={`${inter.variable} font-sans text-navy-800 bg-white antialiased`}>
+      <body suppressHydrationWarning className={`${inter.variable} font-sans text-navy-800 bg-white antialiased`}>
         <Header />
         <main>{children}</main>
         <Footer />
