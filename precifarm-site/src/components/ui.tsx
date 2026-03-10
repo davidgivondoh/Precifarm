@@ -447,14 +447,14 @@ export function CTASection({
   primaryText?: string;
 }) {
   return (
-    <section className="py-20 md:py-24 bg-gradient-navy text-white text-center">
+    <section className="py-20 md:py-24 bg-gray-50 border-t border-gray-200 text-center">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">{title}</h2>
-        <p className="text-gray-300 max-w-md mx-auto mb-10 text-lg leading-relaxed">{subtitle}</p>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight text-navy-900">{title}</h2>
+        <p className="text-gray-500 max-w-md mx-auto mb-10 text-lg leading-relaxed">{subtitle}</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href={primaryHref}
-            className="inline-flex items-center justify-center px-8 py-4 bg-white text-navy-900 font-semibold rounded-lg hover:bg-gray-100 transition-all shadow-sm text-base"
+            className="inline-flex items-center justify-center px-8 py-4 bg-navy-900 text-white font-semibold rounded-lg hover:bg-navy-800 transition-all shadow-sm text-base"
           >
             {primaryText}
           </Link>
@@ -462,7 +462,7 @@ export function CTASection({
             href="https://wa.me/254794702768"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-8 py-4 border-2 border-gray-500 text-white font-semibold rounded-lg hover:bg-white/10 transition-all text-base"
+            className="inline-flex items-center justify-center px-8 py-4 border-2 border-navy-900 text-navy-900 font-semibold rounded-lg hover:bg-navy-900 hover:text-white transition-all text-base"
           >
             WhatsApp Us
           </a>

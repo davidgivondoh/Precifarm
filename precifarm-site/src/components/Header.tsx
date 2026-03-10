@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
-import { LogoMark } from "./Logo";
+import { LogoMarkFull } from "./Logo";
 
 const navItems = [
   { href: "/solar-pumps", label: "Solar Pumps" },
@@ -32,7 +32,7 @@ export function Header() {
     >
       <nav className="max-w-7xl mx-auto px-6 flex items-center justify-between h-[72px]">
         <Link href="/">
-          <LogoMark />
+          <LogoMarkFull />
         </Link>
 
         {/* Desktop nav */}

@@ -1,46 +1,103 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import {
-  PageHero,
   Section,
   SectionHeader,
   DataTable,
   IncludesItem,
   Step,
-  DarkCard,
   CTASection,
 } from "@/components/ui";
 
 export const metadata: Metadata = {
-  title: "Solar Pumping Systems — Precifarm Kenya",
+  title: "Solar Water Pumps Kenya — Borehole & River Pumping Systems",
   description:
-    "Turnkey solar water pumping systems for boreholes, rivers, and open water sources. From KES 145,000 with 99.2% uptime guarantee.",
+    "Turnkey solar water pumping systems for boreholes, rivers, and dams in Kenya. From KES 145,000 with 99.2% uptime guarantee and 25-year panel warranty. Eliminate diesel costs and pump free water with solar energy.",
+  keywords: [
+    "solar water pump Kenya",
+    "solar borehole pump",
+    "solar pump price Kenya",
+    "solar water pumping system",
+    "borehole pump solar powered",
+    "river water pump solar",
+    "agricultural solar pump",
+    "Lorentz pump Kenya",
+    "solar pump installation",
+    "off-grid water pump Kenya",
+  ],
+  alternates: { canonical: "https://precifarm.com/solar-pumps" },
+  openGraph: {
+    title: "Solar Water Pumps Kenya — From KES 145,000",
+    description: "Turnkey solar water pumping for boreholes, rivers, and dams. 99.2% uptime, 25-year warranty, zero fuel costs.",
+    url: "https://precifarm.com/solar-pumps",
+    images: [{ url: "/images/pump5.jpg", width: 1200, height: 630, alt: "Solar water pump system installed on a Kenyan farm" }],
+  },
 };
 
 export default function SolarPumpsPage() {
   return (
     <>
-      <PageHero
-        badge="&#9788; Solar Pumping Systems"
-        title="Stop Paying for Diesel."
-        titleAccent="Start Pumping Free Water."
-        subtitle="Kenyan farmers lose millions every year to fuel costs and unreliable grid power. Our turnkey solar pump systems deliver water every single day — no fuel bills, no generator noise, no KPLC dependency. Just sunlight and water."
-        meta={[
-          { icon: "&#128176;", text: "From KES 145,000" },
-          { icon: "&#9878;", text: "99.2% Uptime Guarantee" },
-          { icon: "&#128197;", text: "7-12 Day Installation" },
-        ]}
-      />
+      {/* Hero */}
+      <section className="relative min-h-[85vh] flex items-center">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/images/pump5.jpg"
+            alt="Solar-powered water pump delivering water on a Kenyan farm"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a]/90 via-[#0f172a]/70 to-[#0f172a]/30" />
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-6 py-32 w-full">
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-semibold mb-6 bg-white/15 text-white backdrop-blur-sm">
+            Solar Pumping Systems
+          </span>
+          <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-white mb-3 leading-[1.1] tracking-tight max-w-2xl">
+            Stop Paying for Diesel.
+          </h1>
+          <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-gray-300 mb-6 leading-[1.1] tracking-tight max-w-2xl">
+            Start Pumping Free Water.
+          </h1>
+          <p className="text-lg text-gray-300 max-w-xl leading-relaxed mb-10">
+            Turnkey solar pump systems that deliver water every single day — no fuel bills, no generator noise, no KPLC dependency. Just sunlight and water.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 mb-12">
+            <Link
+              href="/#quote"
+              className="inline-flex items-center justify-center px-8 py-4 bg-white text-navy-900 font-semibold rounded-lg hover:bg-gray-100 transition-colors text-base"
+            >
+              Get a Free Quote
+            </Link>
+            <Link
+              href="#packages"
+              className="inline-flex items-center justify-center px-8 py-4 border border-white/30 text-white font-semibold rounded-lg hover:bg-white/10 transition-colors text-base"
+            >
+              View Packages
+            </Link>
+          </div>
+          <div className="flex flex-wrap gap-6">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-5 py-3 text-center">
+              <span className="text-2xl font-extrabold text-white block">KES 145K</span>
+              <span className="text-xs text-gray-300">Starting Price</span>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-5 py-3 text-center">
+              <span className="text-2xl font-extrabold text-white block">99.2%</span>
+              <span className="text-xs text-gray-300">Uptime Guarantee</span>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-5 py-3 text-center">
+              <span className="text-2xl font-extrabold text-white block">7-12</span>
+              <span className="text-xs text-gray-300">Days to Install</span>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-5 py-3 text-center">
+              <span className="text-2xl font-extrabold text-white block">25 yr</span>
+              <span className="text-xs text-gray-300">System Lifespan</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      {/* Hero Image + Intro Split */}
+      {/* Intro */}
       <Section>
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <img
-              src="/images/water-tanks.jpg"
-              alt="Elevated water storage tanks with blue HDPE pipe connections and valves"
-              className="rounded-2xl w-full h-80 object-cover"
-            />
-          </div>
           <div>
             <h2 className="text-3xl font-bold text-navy-900 mb-4">Water Security for Every Farm in Kenya</h2>
             <p className="text-gray-500 leading-relaxed mb-4">
@@ -49,6 +106,101 @@ export default function SolarPumpsPage() {
             <p className="text-gray-500 leading-relaxed">
               Every system pays for itself within 12-24 months through fuel savings alone. After that, your water is essentially free for the next 25 years.
             </p>
+          </div>
+          <div className="rounded-2xl overflow-hidden bg-white p-6">
+            <img
+              src="/images/solar-pumps-hero.png"
+              alt="Range of submersible pumps and solar panels available from Precifarm"
+              className="w-full h-72 object-contain"
+            />
+          </div>
+        </div>
+      </Section>
+
+      {/* Diesel vs Solar Comparison */}
+      <Section className="bg-gray-50">
+        <SectionHeader title="Why Switch to Solar?" subtitle="See exactly how much you save when you replace diesel or grid-powered pumping with solar." />
+
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Diesel Card */}
+          <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
+            <div className="bg-red-50 px-8 py-5 border-b border-red-100">
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-xs font-bold text-red-400 uppercase tracking-widest mb-1">Old Way</p>
+                  <h3 className="text-xl font-bold text-gray-900">Diesel Pump</h3>
+                </div>
+                <span className="text-3xl">&#9981;&#65039;</span>
+              </div>
+            </div>
+            <div className="p-8 space-y-5">
+              {[
+                { label: "Daily fuel", value: "KES 1,500 - 4,000" },
+                { label: "Monthly cost", value: "KES 45,000 - 120,000" },
+                { label: "Annual cost", value: "KES 540,000 - 1.4M" },
+                { label: "Maintenance", value: "Oil, filters, breakdowns" },
+                { label: "Lifespan", value: "3 - 5 years" },
+                { label: "Noise &amp; emissions", value: "High" },
+                { label: "Reliability", value: "Fuel-dependent" },
+              ].map((item, i) => (
+                <div key={i} className="flex items-center justify-between pb-4 border-b border-gray-100 last:border-0 last:pb-0">
+                  <span className="text-sm text-gray-500">{item.label}</span>
+                  <span className="text-sm font-bold text-red-600">{item.value}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Solar Card */}
+          <div className="bg-white rounded-2xl border-2 border-green-500 overflow-hidden relative shadow-lg">
+            <span className="absolute top-4 right-4 bg-green-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Recommended</span>
+            <div className="bg-green-50 px-8 py-5 border-b border-green-100">
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-xs font-bold text-green-500 uppercase tracking-widest mb-1">Smart Way</p>
+                  <h3 className="text-xl font-bold text-gray-900">Solar Pump</h3>
+                </div>
+                <span className="text-3xl">&#9728;&#65039;</span>
+              </div>
+            </div>
+            <div className="p-8 space-y-5">
+              {[
+                { label: "Daily fuel", value: "KES 0", highlight: true },
+                { label: "Monthly cost", value: "KES 0", highlight: true },
+                { label: "Annual cost", value: "KES 0", highlight: true },
+                { label: "Maintenance", value: "Annual check-up only", highlight: false },
+                { label: "Lifespan", value: "25+ years", highlight: false },
+                { label: "Noise &amp; emissions", value: "None", highlight: false },
+                { label: "Reliability", value: "99.2% uptime", highlight: false },
+              ].map((item, i) => (
+                <div key={i} className="flex items-center justify-between pb-4 border-b border-gray-100 last:border-0 last:pb-0">
+                  <span className="text-sm text-gray-500">{item.label}</span>
+                  <span className={`text-sm font-bold ${item.highlight ? "text-green-600 bg-green-50 px-3 py-1 rounded-full" : "text-green-700"}`}>{item.value}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Savings summary */}
+        <div className="mt-10 bg-white rounded-2xl border border-gray-200 p-8 md:p-10">
+          <p className="text-center text-sm font-semibold text-gray-400 uppercase tracking-widest mb-6">Your Savings at a Glance</p>
+          <div className="grid sm:grid-cols-3 gap-8">
+            <div className="text-center">
+              <span className="text-4xl font-extrabold text-navy-900 block">12-24</span>
+              <span className="text-xs text-gray-400 uppercase tracking-wider block mt-1">Months to Payback</span>
+              <p className="text-sm text-gray-500 mt-2">System pays for itself through fuel &amp; maintenance savings</p>
+            </div>
+            <div className="text-center sm:border-x sm:border-gray-100 sm:px-8">
+              <span className="text-4xl font-extrabold text-green-600 block">500K+</span>
+              <span className="text-xs text-gray-400 uppercase tracking-wider block mt-1">KES Saved Per Year</span>
+              <p className="text-sm text-gray-500 mt-2">After payback, every shilling stays in your pocket</p>
+            </div>
+            <div className="text-center">
+              <span className="text-4xl font-extrabold text-navy-900 block">25+</span>
+              <span className="text-xs text-gray-400 uppercase tracking-wider block mt-1">Years of Free Water</span>
+              <p className="text-sm text-gray-500 mt-2">Solar panels keep producing long after they have paid off</p>
+            </div>
           </div>
         </div>
       </Section>
@@ -65,7 +217,7 @@ export default function SolarPumpsPage() {
       </Section>
 
       {/* Packages Table */}
-      <Section>
+      <Section id="packages">
         <SectionHeader title="Solar Pump Packages" subtitle="Choose the right system for your farm size and water requirements. Every package is fully installed and commissioned." />
         <DataTable
           headers={["Package", "Size", "Solar Array", "Max Head", "Daily Output", "Best For", "Price"]}
@@ -81,35 +233,21 @@ export default function SolarPumpsPage() {
         <p className="text-sm text-gray-400 mt-4 text-center">Not sure which package? Tell us your acreage and water source — we will recommend the right system.</p>
       </Section>
 
-      {/* Image + ROI Split */}
-      <Section className="border-t border-gray-100">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 className="text-3xl font-bold text-navy-900 mb-4">The Numbers Speak for Themselves</h2>
-            <div className="space-y-4">
-              <div className="bg-white border border-gray-200 rounded-2xl p-6">
-                <h3 className="text-lg font-bold mb-1">Diesel Pump Running Cost</h3>
-                <p className="text-sm text-gray-500">KES 1,500 - 4,000 per day in fuel, plus maintenance, oil changes, and breakdowns. That is KES 45,000 - 120,000 per month.</p>
-              </div>
-              <div className="bg-white border border-gray-200 rounded-2xl p-6">
-                <h3 className="text-lg font-bold mb-1">Solar Pump Running Cost</h3>
-                <p className="text-sm text-gray-500">KES 0 per day. Zero fuel. Zero grid bills. Minimal maintenance. The sun does not send invoices.</p>
-              </div>
-              <div className="bg-white border border-gray-200 rounded-2xl p-6">
-                <h3 className="text-lg font-bold mb-1">Payback Period</h3>
-                <p className="text-sm text-gray-500">Most systems pay for themselves in 12-24 months. After that, you are saving KES 500,000+ every year.</p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <img
-              src="/images/solar-panel-installation.jpg"
-              alt="Solar panel array installed on galvanized steel mounting for agricultural pump system"
-              className="rounded-2xl w-full h-96 object-cover"
-            />
+      {/* Large installation image */}
+      <section className="relative h-[350px] overflow-hidden">
+        <img
+          src="/images/solar-pump-irrigation-system.webp"
+          alt="Technician installing elevated solar panel array for irrigation pump system"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a]/70 to-transparent flex items-end">
+          <div className="max-w-7xl mx-auto px-6 pb-10 w-full">
+            <p className="text-white text-2xl md:text-3xl font-bold max-w-2xl">
+              From single-panel domestic setups to 14-panel commercial arrays — we engineer systems that scale with your farm.
+            </p>
           </div>
         </div>
-      </Section>
+      </section>
 
       {/* What's Included */}
       <Section>
@@ -159,16 +297,35 @@ export default function SolarPumpsPage() {
         </div>
       </Section>
 
-      {/* Component Standards */}
-      <Section className="bg-navy-900 text-white">
-        <SectionHeader title="Built with Components You Can Trust" subtitle="We only use proven, bankable components with robust local support and spare parts availability across Kenya." light />
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <DarkCard title="Solar Panels" description="Tier-1 manufacturers: Jinko, Canadian Solar, JA Solar, Longi. 25-year performance warranty." />
-          <DarkCard title="Pumps" description="Lorentz, Grundfos, Dayliff, CRI, Franklin — chosen based on your borehole depth and flow requirements." />
-          <DarkCard title="Controllers" description="Lorentz, Grundfos, Schneider, ABB — with dry-run protection to safeguard your investment." />
-          <DarkCard title="Cables" description="UV-resistant, submersible-rated cabling built for underground and underwater conditions." />
-          <DarkCard title="Mounting" description="Hot-dip galvanized steel structures engineered for Kenya's wind loads and terrain." />
-          <DarkCard title="Warranty" description="Manufacturer-backed, locally serviceable — no waiting for overseas parts or technicians." />
+      {/* Water source image + use cases */}
+      <Section className="bg-gray-50">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="rounded-2xl overflow-hidden">
+            <img
+              src="/images/sp100.png"
+              alt="Submersible pump with solar panel delivering water"
+              className="w-full h-80 object-cover"
+            />
+          </div>
+          <div>
+            <h2 className="text-3xl font-bold text-navy-900 mb-4">Works with Any Water Source</h2>
+            <p className="text-gray-500 leading-relaxed mb-6">
+              Our systems pump from boreholes up to 280m deep, rivers, dams, water pans, and shallow wells. We match the pump type to your specific water source and terrain.
+            </p>
+            <div className="grid grid-cols-2 gap-4">
+              {[
+                { title: "Boreholes", desc: "Up to 280m depth" },
+                { title: "Rivers & Dams", desc: "Surface pumping" },
+                { title: "Water Pans", desc: "Open water sources" },
+                { title: "Shallow Wells", desc: "Under 25m depth" },
+              ].map((s) => (
+                <div key={s.title} className="bg-white border border-gray-200 rounded-xl p-4">
+                  <h4 className="text-sm font-bold text-navy-900">{s.title}</h4>
+                  <p className="text-xs text-gray-400 mt-1">{s.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </Section>
 

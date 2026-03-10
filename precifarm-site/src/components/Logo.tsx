@@ -43,7 +43,7 @@ export function LogoMarkFull() {
           <StarburstIcon size={16} />
         </span>
       </div>
-      <span className="text-[10px] italic text-gray-400 leading-none mt-1 tracking-wide">
+      <span className="text-[10px] italic text-gray-500 leading-none mt-1 tracking-wide">
         Precision irrigation for the future
       </span>
     </div>

@@ -12,6 +12,64 @@ const counties = [
   "Uasin Gishu","Vihiga","Wajir","West Pokot",
 ];
 
+export interface QuoteEntry {
+  id: string;
+  name: string;
+  phone: string;
+  email: string;
+  county: string;
+  system: string;
+  details: string;
+  submittedAt: string;
+  status: "new" | "contacted" | "quoted" | "closed";
+}
+
+const STORAGE_KEY = "precifarm_quotes";
+
+export function getStoredQuotes(): QuoteEntry[] {
+  if (typeof window === "undefined") return [];
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch {
+    return [];
+  }
+}
+
+export function updateQuoteStatus(id: string, status: QuoteEntry["status"]) {
+  const quotes = getStoredQuotes();
+  const idx = quotes.findIndex((q) => q.id === id);
+  if (idx !== -1) {
+    quotes[idx].status = status;
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(quotes));
+  }
+}
+
+export function deleteQuote(id: string) {
+  const quotes = getStoredQuotes().filter((q) => q.id !== id);
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(quotes));
+}
+
+function saveQuote(data: Record<string, string>) {
+  const entry: QuoteEntry = {
+    id: crypto.randomUUID(),
+    name: data.name || "",
+    phone: data.phone || "",
+    email: data.email || "",
+    county: data.county || "",
+    system: data.system || "",
+    details: data.details || "",
+    submittedAt: new Date().toISOString(),
+    status: "new",
+  };
+
+  const quotes = getStoredQuotes();
+  quotes.unshift(entry);
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(quotes));
+
+  return entry;
+}
+
 export function QuoteForm() {
   const [submitted, setSubmitted] = useState(false);
   const [whatsappUrl, setWhatsappUrl] = useState("");
@@ -20,6 +78,9 @@ export function QuoteForm() {
     e.preventDefault();
     const fd = new FormData(e.currentTarget);
     const data = Object.fromEntries(fd.entries()) as Record<string, string>;
+
+    // Save to localStorage
+    saveQuote(data);
 
     const message = [
       `*New Quote Request — Precifarm*`,

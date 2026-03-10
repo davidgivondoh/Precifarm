@@ -1,16 +1,49 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import {
   Section,
   SectionHeader,
   StatCard,
   FeatureCard,
-  Benefit,
   PricingCard,
-  DataTable,
-  DarkCard,
   CTASection,
 } from "@/components/ui";
 import { QuoteForm } from "@/components/QuoteForm";
+
+export const metadata: Metadata = {
+  title: "Precifarm — Solar Pumps, Drip Irrigation & Farm Design | Kenya",
+  description:
+    "Kenya's leading precision agriculture company. Solar water pumps from KES 145,000, drip irrigation kits from KES 45,000, and professional farm design. 850+ farms served across 38 counties with 99.2% uptime guarantee.",
+  keywords: [
+    "solar water pump Kenya",
+    "drip irrigation kit Kenya",
+    "farm irrigation system",
+    "solar pump installation Kenya",
+    "precision agriculture",
+    "smallholder farming Kenya",
+    "borehole pump solar",
+    "agricultural engineering",
+    "Precifarm Kenya",
+    "water pumping system",
+  ],
+  alternates: {
+    canonical: "https://precifarm.com",
+  },
+  openGraph: {
+    title: "Precifarm — Solar Pumps, Drip Irrigation & Farm Design | Kenya",
+    description:
+      "Solar water pumps, drip irrigation, and farm design engineered for Kenyan farmers. 850+ farms, 38 counties, 99.2% uptime.",
+    url: "https://precifarm.com",
+    images: [
+      {
+        url: "/images/sp500.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Precifarm solar-powered water pumping system on a Kenyan farm",
+      },
+    ],
+  },
+};
 
 export default function Home() {
   return (
@@ -19,8 +52,8 @@ export default function Home() {
       <section className="relative min-h-[90vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/solar-pump-field.jpg"
-            alt="Solar-powered water pump system in a lush green agricultural field"
+            src="/images/sp500.jpg"
+            alt="Solar-powered water pump with dual panels pumping water on a Kenyan farm"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a]/90 via-[#0f172a]/75 to-[#0f172a]/40" />
@@ -98,7 +131,7 @@ export default function Home() {
             href="/farm-design"
             title="Farm Design & Engineering"
             description="We survey your land, design the hydraulics, and manage the entire project. A farm engineered for maximum yield and minimum waste."
-            image="/images/water-tanks.jpg"
+            image="/images/drip-kit-installation.jpg"
           />
           <FeatureCard
             href="/solar-energy"
@@ -112,8 +145,8 @@ export default function Home() {
       {/* Visual break — water infrastructure */}
       <section className="relative h-[400px] overflow-hidden">
         <img
-          src="/images/water-tanks.jpg"
-          alt="Elevated water storage tanks with HDPE pipe connections and filtration system"
+          src="/images/sp500.jpg"
+          alt="Solar-powered water pumping system with dual panels delivering water to farm"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a]/70 to-transparent flex items-end">
@@ -131,37 +164,21 @@ export default function Home() {
           title="Why Kenyan Farmers Choose Precifarm"
           subtitle="We do not just sell you equipment and disappear. We engineer a complete system, install it properly, and stand behind it with real guarantees."
         />
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <Benefit
-            icon="&#9878;"
-            title="99.2% Uptime — Guaranteed"
-            description="If your system drops below 99% uptime in any month, we credit your account automatically. No arguments, no fine print."
-          />
-          <Benefit
-            icon="&#128200;"
-            title="Your Money Back in 18 Months"
-            description="We calculate your ROI before we break ground. On average, our systems pay for themselves in just 18 months through fuel and water savings."
-          />
-          <Benefit
-            icon="&#9201;"
-            title="Quote Within 24 Hours"
-            description="Send us your details today and our engineering team will respond with a full scope and transparent pricing by tomorrow."
-          />
-          <Benefit
-            icon="&#127758;"
-            title="We Come to You — All 38 Counties"
-            description="Whether you farm in Turkana or Taita-Taveta, we deliver, install, and support your system with a local service network."
-          />
-          <Benefit
-            icon="&#128274;"
-            title="Fully EPRA Compliant"
-            description="Every solar installation meets Energy and Petroleum Regulatory Authority standards. Proper permits, proper engineering, proper peace of mind."
-          />
-          <Benefit
-            icon="&#128225;"
-            title="PreciSense Remote Monitoring"
-            description="See exactly how your system is performing from your phone. Get SMS alerts if anything needs attention — before it becomes a problem."
-          />
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[
+            { num: "01", title: "99.2% Uptime — Guaranteed", desc: "If your system drops below 99% uptime in any month, we credit your account automatically. No arguments, no fine print." },
+            { num: "02", title: "Your Money Back in 18 Months", desc: "We calculate your ROI before we break ground. On average, our systems pay for themselves in just 18 months through fuel and water savings." },
+            { num: "03", title: "Quote Within 24 Hours", desc: "Send us your details today and our engineering team will respond with a full scope and transparent pricing by tomorrow." },
+            { num: "04", title: "We Come to You — All 38 Counties", desc: "Whether you farm in Turkana or Taita-Taveta, we deliver, install, and support your system with a local service network." },
+            { num: "05", title: "Fully EPRA Compliant", desc: "Every solar installation meets Energy and Petroleum Regulatory Authority standards. Proper permits, proper engineering, proper peace of mind." },
+            { num: "06", title: "PreciSense Remote Monitoring", desc: "See exactly how your system is performing from your phone. Get SMS alerts if anything needs attention — before it becomes a problem." },
+          ].map((item) => (
+            <div key={item.num} className="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-md transition-all">
+              <span className="text-xs font-bold text-gray-300 tracking-widest mb-3 block">{item.num}</span>
+              <h3 className="text-base font-bold text-navy-900 mb-2">{item.title}</h3>
+              <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
+            </div>
+          ))}
         </div>
       </Section>
 
@@ -172,129 +189,58 @@ export default function Home() {
           subtitle="Real results from real farms across Kenya."
         />
         <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
-            <div className="flex gap-1 mb-4 text-amber-400 text-lg">
-              &#9733;&#9733;&#9733;&#9733;&#9733;
+          <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
+            <div className="h-48 overflow-hidden">
+              <img src="/images/farmer1.jfif" alt="Faith Mwangi, paw paw farmer in Naivasha" className="w-full h-full object-cover" />
             </div>
-            <p className="text-gray-600 text-sm leading-relaxed mb-6">
-              &ldquo;Before Precifarm, I was spending KES 8,000 a month on diesel to pump water from my borehole. Now my solar pump runs for free and I have not touched a generator in over a year. The system paid for itself in 14 months.&rdquo;
-            </p>
-            <div>
-              <p className="font-bold text-navy-900 text-sm">James Mwangi</p>
-              <p className="text-xs text-gray-400">Tomato farmer, Naivasha &bull; 3-acre farm</p>
-            </div>
-          </div>
-          <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
-            <div className="flex gap-1 mb-4 text-amber-400 text-lg">
-              &#9733;&#9733;&#9733;&#9733;&#9733;
-            </div>
-            <p className="text-gray-600 text-sm leading-relaxed mb-6">
-              &ldquo;The drip irrigation system transformed my cabbage and kale yields. I am using less than half the water I used to and harvesting more. Their team designed everything around my specific plot and water source.&rdquo;
-            </p>
-            <div>
-              <p className="font-bold text-navy-900 text-sm">Mary Wanjiku</p>
-              <p className="text-xs text-gray-400">Vegetable grower, Nyandarua &bull; 1.5-acre farm</p>
+            <div className="p-8">
+              <div className="flex gap-1 mb-4 text-amber-400 text-lg">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+              <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                &ldquo;My paw paw trees were struggling with inconsistent watering from my old diesel pump. Since Precifarm installed the solar pump system, I have reliable water every day and my fruit quality has improved dramatically. The system paid for itself in 14 months through fuel savings alone.&rdquo;
+              </p>
+              <div>
+                <p className="font-bold text-navy-900 text-sm">Faith Mwangi</p>
+                <p className="text-xs text-gray-400">Paw paw farmer, Naivasha &bull; 3-acre farm</p>
+              </div>
             </div>
           </div>
-          <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
-            <div className="flex gap-1 mb-4 text-amber-400 text-lg">
-              &#9733;&#9733;&#9733;&#9733;&#9733;
+          <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
+            <div className="h-48 overflow-hidden">
+              <img src="/images/farmer2.jfif" alt="Mary Wanjiku, vegetable grower in Nyandarua" className="w-full h-full object-cover" />
             </div>
-            <p className="text-gray-600 text-sm leading-relaxed mb-6">
-              &ldquo;We run a 12-acre flower farm and needed reliable power and irrigation. Precifarm handled everything — solar panels, pumps, drip lines, the monitoring system. Their after-sales support is outstanding.&rdquo;
-            </p>
-            <div>
-              <p className="font-bold text-navy-900 text-sm">David Kimani</p>
-              <p className="text-xs text-gray-400">Flower exporter, Nakuru &bull; 12-acre farm</p>
+            <div className="p-8">
+              <div className="flex gap-1 mb-4 text-amber-400 text-lg">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+              <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                &ldquo;I grow kales and sukuma wiki for the Nairobi market. The drip irrigation system transformed my yields — I am harvesting twice as much while using less than half the water. Their team designed everything around my specific plot and water source.&rdquo;
+              </p>
+              <div>
+                <p className="font-bold text-navy-900 text-sm">Mary Wanjiku</p>
+                <p className="text-xs text-gray-400">Kales &amp; vegetable farmer, Nyandarua &bull; 1.5-acre farm</p>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
+            <div className="h-48 overflow-hidden">
+              <img src="/images/farmer3.jpeg" alt="Grace Kimani, tomato farmer in Nakuru" className="w-full h-full object-cover" />
+            </div>
+            <div className="p-8">
+              <div className="flex gap-1 mb-4 text-amber-400 text-lg">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+              <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                &ldquo;My tomato greenhouse needed reliable water and power. Precifarm handled everything — solar panels, pumps, drip lines, and the monitoring system. My tomato harvests have increased by 40% and I no longer lose crops to irregular watering.&rdquo;
+              </p>
+              <div>
+                <p className="font-bold text-navy-900 text-sm">Grace Kimani</p>
+                <p className="text-xs text-gray-400">Tomato farmer, Nakuru &bull; 5-acre farm</p>
+              </div>
             </div>
           </div>
         </div>
-      </Section>
-
-      {/* Solar panels image + Brands */}
-      <Section>
-        <SectionHeader
-          title="Three Brands, One Mission"
-          subtitle="Each brand delivers specialized expertise so your farm gets exactly what it needs — nothing more, nothing less."
-        />
-        <div className="grid lg:grid-cols-3 gap-6 mb-12">
-          <div className="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-md transition-all">
-            <div className="h-40 overflow-hidden">
-              <img src="/images/solar-pump-field.jpg" alt="" className="w-full h-full object-cover" />
-            </div>
-            <div className="p-8">
-              <h3 className="text-lg font-bold mb-1 text-navy-900">Precifarm</h3>
-              <p className="text-sm text-gray-400 mb-3">Agri-Engineering</p>
-              <p className="text-sm text-gray-500 leading-relaxed">
-                The heart of what we do. Solar water pumping, precision drip irrigation, and complete farm design — engineered for Kenyan conditions and Kenyan crops.
-              </p>
-            </div>
-          </div>
-          <div className="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-md transition-all">
-            <div className="h-40 overflow-hidden">
-              <img src="/images/solar-panel-installation.jpg" alt="" className="w-full h-full object-cover" />
-            </div>
-            <div className="p-8">
-              <h3 className="text-lg font-bold mb-1 text-navy-900">Nishati by Precifarm</h3>
-              <p className="text-sm text-gray-400 mb-3">Solar Energy</p>
-              <p className="text-sm text-gray-500 leading-relaxed">
-                Reliable solar power for your home, business, or farm operations. Cash-purchase systems with no hidden fees and full remote monitoring.
-              </p>
-            </div>
-          </div>
-          <div className="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-md transition-all">
-            <div className="h-40 overflow-hidden">
-              <img src="/images/drip-field-redsoil.jpg" alt="" className="w-full h-full object-cover" />
-            </div>
-            <div className="p-8">
-              <h3 className="text-lg font-bold mb-1 text-navy-900">PreciSense&trade;</h3>
-              <p className="text-sm text-gray-400 mb-3">Smart Monitoring</p>
-              <p className="text-sm text-gray-500 leading-relaxed">
-                Know exactly how your system is performing. Real-time data, SMS alerts when something needs attention, and performance history on your phone.
-              </p>
-            </div>
-          </div>
-        </div>
-      </Section>
-
-      {/* Trusted Components */}
-      <Section className="bg-navy-900 text-white">
-        <SectionHeader
-          title="Built with Components You Can Trust"
-          subtitle="We only use tier-1, bankable equipment with proven track records in East African conditions. No shortcuts, no off-brand substitutes."
-          light
-        />
-        <div className="grid sm:grid-cols-3 gap-6">
-          <DarkCard
-            title="Solar Panels"
-            description="Tier-1 manufacturers only: Jinko Solar, Canadian Solar, JA Solar, and Longi Solar. Every panel carries a 25-year performance warranty."
-          />
-          <DarkCard
-            title="Water Pumps"
-            description="Lorentz, Grundfos, Dayliff, CRI, and Franklin Electric. All with AISI 304/316 stainless steel wet ends built to handle Kenyan water conditions."
-          />
-          <DarkCard
-            title="Controllers & Inverters"
-            description="Lorentz, Grundfos, Schneider, ABB, Victron Energy, and Growatt. Dry-run protection comes standard on every installation."
-          />
-        </div>
-      </Section>
-
-      {/* PreciSense */}
-      <Section id="precisense">
-        <SectionHeader
-          title="PreciSense&trade; Monitoring Plans"
-          subtitle="Choose the level of visibility that fits your farm. Every Precifarm installation includes the Lite tier at no extra cost."
-        />
-        <DataTable
-          headers={["Tier", "What You Get", "Monthly Cost"]}
-          rows={[
-            ["Lite", "SMS alerts when something needs attention, plus a daily performance summary", "Free with every system"],
-            ["Standard", "Mobile app with real-time data, flow rates, and 30-day performance history", "KES 500"],
-            ["Pro", "Full web dashboard, soil moisture sensors, weather data, and 1-year history", "KES 1,500"],
-            ["Enterprise", "Multi-site management, API access, and SCADA integration for large operations", "KES 5,000"],
-          ]}
-        />
       </Section>
 
       {/* Maintenance */}
@@ -307,7 +253,7 @@ export default function Home() {
           <PricingCard
             name="Essential"
             description="For farmers who want an annual check-up"
-            price="KES 12,000"
+            price="KES 3,000"
             priceUnit="/year"
             features={[
               "Annual on-site inspection",
@@ -318,7 +264,7 @@ export default function Home() {
           <PricingCard
             name="Standard"
             description="Our most popular plan for active farms"
-            price="KES 24,000"
+            price="KES 5,000"
             priceUnit="/year"
             features={[
               "Bi-annual on-site service visits",
@@ -331,7 +277,7 @@ export default function Home() {
           <PricingCard
             name="Premium"
             description="Full coverage for commercial operations"
-            price="KES 48,000"
+            price="KES 10,000"
             priceUnit="/year"
             features={[
               "Quarterly on-site service visits",
@@ -388,8 +334,8 @@ export default function Home() {
               </div>
               <div className="mt-10">
                 <img
-                  src="/images/pipe-fittings.jpg"
-                  alt="Farmer planting seedlings on a well-managed agricultural plot"
+                  src="/images/drip-kit-installation.jpg"
+                  alt="Drip irrigation kit fittings installed on Kenyan farmland"
                   className="rounded-2xl w-full h-48 object-cover"
                 />
               </div>

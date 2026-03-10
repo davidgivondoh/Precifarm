@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add .gitignore PRECIFARM_DOCUMENTATION.md precifarm-site/)",
+      "Bash(git push origin main)",
+      "Bash(curl -s --list-only -u \"u373428074.admin:U8W!3p#xQ2rT7kV9\" ftp://ftp.precifarm.com/)",
+      "Bash(npx next build)"
+    ]
+  }
+}
