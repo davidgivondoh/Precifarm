@@ -86,13 +86,13 @@ export default function Home() {
             href="/solar-pumps"
             title="Solar Water Pumping"
             description="Pump water from boreholes, rivers, or dams using free solar energy. No fuel costs, no grid connection needed. Systems from KES 145,000."
-            image="/images/solar-pump-product.jpg"
+            image="/images/solar-pumps-hero.png"
           />
           <FeatureCard
             href="/drip-irrigation"
             title="Drip Irrigation"
             description="Deliver water directly to crop roots and save up to 60% on water. From quarter-acre kitchen gardens to 10+ acre commercial farms."
-            image="/images/valve-connector.jpg"
+            image="/images/drip-kit-onions.jpg"
           />
           <FeatureCard
             href="/farm-design"
@@ -104,7 +104,7 @@ export default function Home() {
             href="/solar-energy"
             title="Nishati Solar Energy"
             description="Power your home, packhouse, or cold storage with reliable solar. EPRA-compliant systems with remote monitoring included."
-            image="/images/solar-panel-installation.jpg"
+            image="/images/solar-pump-product.jpg"
           />
         </div>
       </Section>
