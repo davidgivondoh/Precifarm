@@ -30,7 +30,7 @@ export function Header() {
         scrolled ? "shadow-md" : ""
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-6 flex items-center justify-between h-[72px]">
+      <nav className="max-w-7xl mx-auto px-6 flex items-center justify-between h-18">
         <Link href="/">
           <LogoMarkFull />
         </Link>
@@ -83,7 +83,7 @@ export function Header() {
 
         {/* Mobile menu */}
         {menuOpen && (
-          <div className="absolute top-[72px] left-0 right-0 bg-white border-b border-gray-200 shadow-lg flex flex-col p-4 gap-1 md:hidden">
+          <div className="absolute top-18 left-0 right-0 bg-white border-b border-gray-200 shadow-lg flex flex-col p-4 gap-1 md:hidden">
             {navItems.map((item) => (
               <Link
                 key={item.href}

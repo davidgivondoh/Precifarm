@@ -90,7 +90,7 @@ function OrganizationSchema() {
     "@type": "Organization",
     name: "Precifarm",
     url: siteUrl,
-    logo: `${siteUrl}/images/precifarm-logo.png`,
+    logo: `${siteUrl}/favicon.ico`,
     description:
       "Precision agricultural engineering company in Kenya specializing in solar pumps, drip irrigation, farm design, and solar energy systems.",
     contactPoint: {

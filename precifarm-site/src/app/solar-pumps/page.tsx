@@ -45,7 +45,7 @@ export default function SolarPumpsPage() {
             alt="Solar-powered water pump delivering water on a Kenyan farm"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a]/90 via-[#0f172a]/70 to-[#0f172a]/30" />
+          <div className="absolute inset-0 bg-linear-to-r from-navy-900/90 via-navy-900/70 to-navy-900/30" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-6 py-32 w-full">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-semibold mb-6 bg-white/15 text-white backdrop-blur-sm">
@@ -234,13 +234,13 @@ export default function SolarPumpsPage() {
       </Section>
 
       {/* Large installation image */}
-      <section className="relative h-[350px] overflow-hidden">
+      <section className="relative h-88 overflow-hidden">
         <img
           src="/images/solar-pump-irrigation-system.webp"
           alt="Technician installing elevated solar panel array for irrigation pump system"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a]/70 to-transparent flex items-end">
+        <div className="absolute inset-0 bg-linear-to-t from-navy-900/70 to-transparent flex items-end">
           <div className="max-w-7xl mx-auto px-6 pb-10 w-full">
             <p className="text-white text-2xl md:text-3xl font-bold max-w-2xl">
               From single-panel domestic setups to 14-panel commercial arrays — we engineer systems that scale with your farm.

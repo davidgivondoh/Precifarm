@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 
@@ -145,7 +144,6 @@ export function ImageSection({
   src,
   alt,
   caption,
-  priority = false,
   aspectRatio = "video",
   overlay,
   children,
@@ -153,7 +151,6 @@ export function ImageSection({
   src: string;
   alt: string;
   caption?: string;
-  priority?: boolean;
   aspectRatio?: "video" | "wide" | "square";
   overlay?: boolean;
   children?: ReactNode;
@@ -167,12 +164,10 @@ export function ImageSection({
   return (
     <figure className="relative overflow-hidden rounded-2xl shadow-sm">
       <div className={`relative ${aspectMap[aspectRatio]}`}>
-        <Image
+        <img
           src={src}
           alt={alt}
-          fill
-          className="object-cover"
-          priority={priority}
+          className="absolute inset-0 w-full h-full object-cover"
         />
         {overlay && (
           <div className="absolute inset-0 bg-linear-to-t from-navy-900/60 via-transparent to-transparent" />

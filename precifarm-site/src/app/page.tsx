@@ -56,7 +56,7 @@ export default function Home() {
             alt="Solar-powered water pump with dual panels pumping water on a Kenyan farm"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a]/90 via-[#0f172a]/75 to-[#0f172a]/40" />
+          <div className="absolute inset-0 bg-linear-to-r from-navy-900/90 via-navy-900/75 to-navy-900/40" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-6 py-32 w-full">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -143,13 +143,13 @@ export default function Home() {
       </Section>
 
       {/* Visual break — water infrastructure */}
-      <section className="relative h-[400px] overflow-hidden">
+      <section className="relative h-100 overflow-hidden">
         <img
           src="/images/sp500.jpg"
           alt="Solar-powered water pumping system with dual panels delivering water to farm"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a]/70 to-transparent flex items-end">
+        <div className="absolute inset-0 bg-linear-to-t from-navy-900/70 to-transparent flex items-end">
           <div className="max-w-7xl mx-auto px-6 pb-12 w-full">
             <p className="text-white text-2xl md:text-3xl font-bold max-w-2xl">
               From water source to crop root — we engineer every connection for reliability and efficiency.
@@ -311,21 +311,21 @@ export default function Home() {
               </p>
               <div className="space-y-5">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 min-w-[40px] bg-gray-100 rounded-lg flex items-center justify-center text-navy-900 font-bold text-sm">1</div>
+                  <div className="w-10 h-10 min-w-10 bg-gray-100 rounded-lg flex items-center justify-center text-navy-900 font-bold text-sm">1</div>
                   <div>
                     <p className="font-semibold text-navy-900 text-sm">Share your details</p>
                     <p className="text-sm text-gray-400">Fill in the form with your farm location, size, and what you need.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 min-w-[40px] bg-gray-100 rounded-lg flex items-center justify-center text-navy-900 font-bold text-sm">2</div>
+                  <div className="w-10 h-10 min-w-10 bg-gray-100 rounded-lg flex items-center justify-center text-navy-900 font-bold text-sm">2</div>
                   <div>
                     <p className="font-semibold text-navy-900 text-sm">We design your system</p>
                     <p className="text-sm text-gray-400">Our engineers assess your needs and prepare a detailed scope and quote.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 min-w-[40px] bg-gray-100 rounded-lg flex items-center justify-center text-navy-900 font-bold text-sm">3</div>
+                  <div className="w-10 h-10 min-w-10 bg-gray-100 rounded-lg flex items-center justify-center text-navy-900 font-bold text-sm">3</div>
                   <div>
                     <p className="font-semibold text-navy-900 text-sm">We install and support</p>
                     <p className="text-sm text-gray-400">Professional installation, commissioning, and ongoing maintenance.</p>

@@ -1,6 +1,6 @@
-:HL["/_next/static/chunks/5d0e89a23ab202c0.css","style"]
+:HL["/_next/static/chunks/0d97bef1b82f1dcb.css","style"]
 :HL["/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/images/drip-kit-onions.jpg","image"]
 :HL["/images/dripmain.jpg","image"]
 :HL["/images/farmer3.jpeg","image"]
-0:{"buildId":"wigP0tXUry5C0TP4AbMKe","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"drip-irrigation","paramType":null,"paramKey":"drip-irrigation","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"X9THG2F-CIpRsvdveywt7","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"drip-irrigation","paramType":null,"paramKey":"drip-irrigation","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}

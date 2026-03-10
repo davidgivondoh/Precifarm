@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useMemo } from "react";
+import { useState, useMemo } from "react";
 import Link from "next/link";
 import {
   getStoredQuotes,
@@ -62,14 +62,13 @@ function exportCSV(quotes: QuoteEntry[]) {
 }
 
 export default function QuotesPage() {
-  const [quotes, setQuotes] = useState<QuoteEntry[]>([]);
+  const [quotes, setQuotes] = useState<QuoteEntry[]>(() => {
+    if (typeof window === "undefined") return [];
+    return getStoredQuotes();
+  });
   const [filter, setFilter] = useState<"all" | QuoteEntry["status"]>("all");
   const [search, setSearch] = useState("");
   const [selectedId, setSelectedId] = useState<string | null>(null);
-
-  useEffect(() => {
-    setQuotes(getStoredQuotes());
-  }, []);
 
   function refresh() {
     setQuotes(getStoredQuotes());

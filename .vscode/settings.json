@@ -1,0 +1,18 @@
+{
+    "claudeCodeChat.permissions.yoloMode": false,
+    "files.exclude": {
+        "precifarm-site/out": true
+    },
+    "search.exclude": {
+        "precifarm-site/out": true
+    },
+    "files.watcherExclude": {
+        "precifarm-site/out/**": true
+    },
+    "javascript.validate.exclude": [
+        "precifarm-site/out/**"
+    ],
+    "tailwindCSS.files.exclude": [
+        "precifarm-site/out/**"
+    ]
+}
