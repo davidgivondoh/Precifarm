@@ -4,4 +4,4 @@
 :HL["/images/solar-pumps-hero.png","image"]
 :HL["/images/solar-pump-irrigation-system.webp","image"]
 :HL["/images/sp100.png","image"]
-0:{"buildId":"1beOgZq1R-vKWZNpWWAmw","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"solar-pumps","paramType":null,"paramKey":"solar-pumps","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"hQmMkiwUGPtwoRvG0bxPL","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"solar-pumps","paramType":null,"paramKey":"solar-pumps","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
